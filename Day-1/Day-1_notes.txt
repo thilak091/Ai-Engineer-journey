@@ -1,0 +1,84 @@
+​Day 1
+​Pandas:—
+​Pandas is a tool that helps us manipulate structured data efficiently. It is used to find, organize, filter and summarize structured data.
+​Functions of Pandas library:—
+​i, read_csv (file_name)
+
+​It is used to create a dataframe / read a csv file.
+
+​syntax: df = pd.read_csv(file_name)
+
+
+​ii, shape
+
+​It is used to find number of rows and columns. It returns a tuple.
+
+​syntax: df.shape
+
+
+​iii, info()
+
+​It is used to get the detailed information of created data frame.
+​df.info()
+
+​iv, set_option(option_change, number)
+
+​used to change pandas library display settings.
+
+​syntax: pd.set_option( _ , _ )
+
+
+​v, head()
+
+​displays the first 5 rows of data frame by default. pass a number to display that much.
+​df.head()
+
+​vi, tail()
+
+​similarly for bottom.
+
+​Video - 2
+​Data Frame
+​A data made up of rows and columns which can be manipulated in pandas.
+​1, Dataframe(Data)
+
+​its a method used to convert a dictionary of key: [value1, value2, ...] into a Row, column Dataframe.
+
+​Series:—
+​Being made of the data of rows of one single column is known as series data type.
+​can be seen by accessing one column in a df:
+
+
+​df['name'] (or) df.name
+
+
+​df['name'] -> ✓
+
+
+​df.name -> ✗ (cuz there might be an attribute named after a column.)
+
+
+
+
+​to access multiple columns of dataframe:—
+
+​df[['col1', 'col2']] \rightarrow list of col names
+
+​df.columns
+
+​returns all column names.
+
+​to Access rows:—
+​i, iloc (integer location)
+
+​used to locate row by row index (0 - n-1)
+​df.iloc[index, index] \rightarrow columns.
+​for first 3 rows \rightarrow make it list of index to access its [0,1,2] or simply 0:2 & multiple rows.
+
+​ii, loc (locate by label/Name)
+
+​used with indexes without names or with names.
+​similar to iloc in working.
+​now to get column, we need to specify name.
+
+
