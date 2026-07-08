@@ -1,0 +1,17 @@
+# Reflection
+
+## Today's Rating
+
+8/10
+
+## What did I learn?
+
+I understood why Pandas exists and what DataFrames and Series are.
+
+## What confused me?
+
+Nothing major. Need more practice.
+
+## Tomorrow
+
+Learn more about reading datasets.
