@@ -1,0 +1,48 @@
+Index:-
+​A range of numbers assigned to rows as an identifier of rows by default.
+​set_index(<columnname>, inplace)
+used to set a column as the index / label of rows.
+​inplace = True \Rightarrow means changes are done forever. (Permanent.)
+​to reset
+​df.reset_index(inplace=True)
+\rightarrow permanent.
+​to set index column while reading the file itself. use index_col parameter in read_csv()
+​ex:
+df = pd.read_csv('data.csv', index_col='Reg.No')
+
+​Use index when you need a different label and your dataframe has a unique value for each row.
+
+
+​sort_index(ascending = True/False)
+This method is used to sort the dataframe in index order.
+​This also has inplace parameter to make permanent changes.
+​Video - 2
+​to use comparison operators in df.
+df['last'] == 'Doe'
+
+0    False  \  series
+1    True    } with T/F
+2    True   /
+
+Filter (filt)
+​Its a series variable, assigned by us for ease that can be used to filter data from dataframe
+​Creation:- filt = df['last'] == 'Doe'
+​applying:-
+i) df[filt] \rightarrow returns filtered data
+ii) df.loc[filt] \rightarrow same.
+​to use And, Or, Not operator we need to use &, |, ~
+​ex:
+filt = (df['last'] == 'Doe') | (df['first'] == 'corey')
+​if we need to get the opposite of a filter, we can use ~
+df.loc[~filt]
+​isin()
+​to create a filter to allow a range / list of values
+​let countries = [' ', ' ', ' '] list of countries
+filt = df['Country'].isin(countries)
+\rightarrow gives only that data whose country is in the list.
+​to apply string filter
+​need to use str.contains() method
+​ex:-
+filt = df['Name'].str.contains('Thilak', na=False)
+\rightarrow doesn't cause error when value is not string.
+
