@@ -19,7 +19,8 @@ This repository documents my **200-day journey** to become an AI Engineer.
 ## 📅 Progress
 
 - ✅ Day 1 - Started my journey
-- ⏳ Day 2 - Coming Soon
+- ✅ Day 2 - Indexing & Filtering
+- ⏳ Day 3 - Coming Soon
 
 ---
 
