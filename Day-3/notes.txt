@@ -1,0 +1,53 @@
+Day 3 (Page 10)
+​sort_values(by = <column_name>)
+
+This method is used to sort the dataframe by column name.
+also has inplace parameter for permanent changes.
+
+​df.sort_index()
+
+sort data by index.
+​to view only one colum (a series) in sorted form we use sort_values()
+
+df.[<column_name>].sort_values()
+
+​to find largest in a series/column
+
+​df[<column_with_numbers>].nlargest(num)
+
+(Note pointing to num: -> number of rows)
+
+​to view all data, but largest based on a column
+
+​df.nlargest(num, <column>)
+​for lowest, user df.nsmallest()
+
+​Page 11
+
+
+​describe()
+
+describes the statistics of every numerical value of the dataframe
+
+​value_counts()
+
+returns the number of times a value is entered per series
+
+​ex:
+
+df['Department'].value_counts()
+
+(Bracket indicating: returns no of times each department was entered)
+
+
+​unique():-
+
+​returns the unique data in a series
+
+df['department'].unique()
+
+​nunique():-
+
+​returns the count of unique data in a series
+
+df['department'].nunique()
