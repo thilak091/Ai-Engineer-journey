@@ -1,41 +1,4 @@
-# 🚀 AI Engineer Journey
-
-Hi! I'm **P. Muthumalai Thilak**, a B.Tech Artificial Intelligence & Data Science student from KCG College of Technology.
-
-This repository documents my **200-day journey** to become an AI Engineer.
-
-## 🎯 Goals
-
-- Become proficient in Machine Learning
-- Learn Deep Learning
-- Master Generative AI
-- Learn n8n Automation
-- Build real-world AI projects
-- Secure AI/ML internships
-- Build a strong GitHub portfolio
-
----
-
-## 📅 Progress
-
-- ✅ Day 1 - Started my journey
-- ✅ Day 2 - Indexing & Filtering
-- ⏳ Day 3 - Coming Soon
-
----
-
-## 🛠️ Technologies I'll Learn
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- TensorFlow
-- PyTorch
-- SQL
-- Git & GitHub
-- n8n
-- APIs# 🤖 AI Engineer Journey | 200-Day Challenge
+# 🤖 AI Engineer Journey | 200-Day Challenge
 
 Hi! I'm **P. Muthumalai Thilak**, a B.Tech student specializing in **Artificial Intelligence & Data Science** at **KCG College of Technology**.
 
@@ -68,7 +31,7 @@ Over the next 200 days, I aim to:
 | 1 | Pandas Basics | ✅ |
 | 2 | Indexing & Filtering | ✅ |
 | 3 | Sorting & Data Exploration | ✅ |
-
+| 4 | Grouping & Aggregation | ✅ | 
 ---
 
 # 📂 Repository Structure
@@ -79,6 +42,7 @@ AI-Engineer-Journey/
 ├── Day-001/
 ├── Day-002/
 ├── Day-003/
+├── Day-004/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -122,8 +86,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **3 / 200**
-- 🟩 GitHub Streak: **3 Days**
+- 📅 Day: **4 / 200**
+- 🟩 GitHub Streak: **4 Days**
 - 💻 Projects Built: **1**
 - 📚 Major Topics Covered:
   - DataFrames
@@ -133,6 +97,8 @@ AI-Engineer-Journey/
   - Filtering
   - Sorting
   - Data Exploration
+  - Grouping
+  - Aggregating
 
 ---
 
@@ -157,11 +123,3 @@ This repository is a record of that journey—from beginner to professional.
 ---
 
 > **"Consistency beats intensity. See you on Day 200." 🚀**
-- Docker
-- LangChain
-- RAG
-- AI Agents
-
----
-
-> "Small progress every day is still progress."
