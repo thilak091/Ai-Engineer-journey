@@ -1,0 +1,43 @@
+Day - 4
+Date: 11/7/26
+​<u>median ()</u>
+Finds the median value for a series of data.
+df[\text{<colum\_name>}].\text{median}()
+​if we run it on the entire dataframe, it will return median for all numerical data columns.
+​<u>count ()</u>
+gives the number of values entered in a column.
+​<u>Grouping :-</u>
+It splits the data into groups based on a given column. It returns an object of groups
+​ex:
+\text{country\_grp} = df.\text{groupby}(\text{'Country'})
+\rightarrow now contains groups of data of individual country.
+​<u>get_grp () :-</u>
+It returns the set of data for one individual given group.
+ex:
+\text{country\_grp}.\text{get\_group}(\text{'United States'})
+​[Page 2]
+​we can access each column of country group object using square brackets
+​<u>Syntax:-</u>
+\text{group-obj}[\text{<column\_name>}]
+​we can count number of unique values for all groups using value_counts.
+​we can also use head(), tail(), loc(), etc. treat the group obj. as a dataframe.
+​<u>agg()</u>
+a function that can show the values of all performable numerical aggregate functions on all the possible numerical columns.
+​if we pass a list of the specific functions performed, it will only do that.
+​<u>sum()</u>
+Its the addition function. it can also count boolean values, True as 1, false as 0.
+​[Page 3]
+​<u>apply()</u>
+a method that applies a given function to every single series/group in the series object / group object.
+​Syntax
+\text{group\_obj}.\text{apply}(\text{fn-name})
+​<u>ex:-</u>
+str methods cannot be used at series objects same for sum.
+​so we use
+\text{group\_obj}[\text{'col name'}].\text{apply}(\text{lambda } x: x.\text{str}.\text{contains}(\text{'value'}).\text{sum}())
+​<u>concat([series1, series2], axis = 'columns', sort = False)</u>
+Concatenates two series to form a data frame
+​<u>rename(columns = {'prev': 'updated/new'})</u>
+used to rename the columns in dataset / dataframe.
+​<u>idxmax() , idxmin()</u>
+returns the index of the max or min
