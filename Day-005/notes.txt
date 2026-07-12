@@ -1,0 +1,55 @@
+Day - 5
+​dropna() :-
+remove rows with not a number (Nan) values
+​syntax:-
+df.dropna(axis=< >, how=< >, subset=[ ])
+
+​axis -> 'index' by default
+​how -> 'any' by default
+
+​axis = 'index' / 'columns'
+
+​-> delete rows
+​-> delete columns
+
+​how = 'any' / 'all' -> delete only when all value is missing.
+
+​-> delete even 1 value is missing
+
+​subset = [     ]
+
+​-> name of the columns that only should be checked for nan
+
+​inplace = to make permanent changes.
+​replace()
+for data cleaning, we can use it to replace unknown/missing string by Nan (nan)
+​ex:
+df.replace('Missing', numpy.nan, inplace=True)
+
+​-> nan value of numpy
+
+​df.isna()
+returns a data frame of True or False for whether nan is present for all the rows.
+​df.fillna(val) :- inplace for permanent.
+replaces all nan by the given value
+ex:-
+df.fillna('Missing')
+​df.dtypes
+this attribute returns the data types of the columns
+​int - integers
+float - floating value
+object - string, series, other objects.
+​Type casting:-
+used to change the data type
+used function astype()
+​ex
+df['age'] = df['age'].astype(float)
+​caution:-
+if nan values are present, we cannot convert to int, it will cause an error. so either fillna(0) then int convert or preferably convert to float.
+​if we want to give nan values when reading a file with unknown strings
+​we do:-
+​na_values = ['NA', 'Missing']
+​df = pd.read_csv('name.csv', na_values=na_values)
+
+​-> automatically assigns nan for na_values.
+
