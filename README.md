@@ -32,6 +32,7 @@ Over the next 200 days, I aim to:
 | 2 | Indexing & Filtering | ✅ |
 | 3 | Sorting & Data Exploration | ✅ |
 | 4 | Grouping & Aggregation | ✅ | 
+| 5 | Cleaning and Filling Data | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -43,6 +44,7 @@ AI-Engineer-Journey/
 ├── Day-002/
 ├── Day-003/
 ├── Day-004/
+├── Day-005/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -86,8 +88,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **4 / 200**
-- 🟩 GitHub Streak: **4 Days**
+- 📅 Day: **5 / 200**
+- 🟩 GitHub Streak: **5 Days**
 - 💻 Projects Built: **1**
 - 📚 Major Topics Covered:
   - DataFrames
