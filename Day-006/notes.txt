@@ -1,0 +1,42 @@
+Day - 6
+​to change all column names:- (only all).
+df.columns = [<new1>, <new2>, <new3>]
+​to change a speci
+​to apply a set of function to change all column name, use list comprehension
+​ex:
+df.columns = [x.lower() for x in df.columns]
+​to remove white spaces or other values
+df.columns = df.columns.str.replace(' ', '_')
+​to change specific columns:-
+df.rename(columns = {<old> : <new>}, inplace)
+-> dict of columns
+-> to be permanent
+​To update a single value of a row:-
+​assign after finding with loc.
+​ex:-
+df.loc[2, 'Name'] = 'Thilak'
+​for whole row
+df.loc[2] = ['Thilak', 'AIDS', 9.8]
+​to change all values of a column,
+use self assignment
+ex:-
+df['email'] = df['email'].str.lower()
+​apply() -> doesn't change df.
+​For series:-
+it applies a function to every value
+​ex:
+df['email'].apply(len)
+​for data frame:-
+it applies the function to each series of a data frame.
+​consider
+df = [ [s1], [s2], [s3] ]
+-> data frame made of serieses
+​it applies functions (ex len) to each series (counts elements in each series)
+​if we use axis parameter, then it applies to rows.
+​df.apply(len, axis = 'columns')
+-> applies to rows of values.
+​applymap()
+​for a df:-
+it applies to every individual value of the df.
+​map()
+​applies a dictionary of old: new values to all values of df/series, but it substitutes Nan for unmapped values.
