@@ -34,6 +34,7 @@ Over the next 200 days, I aim to:
 | 4 | Grouping & Aggregation | ✅ | 
 | 5 | Cleaning and Filling Data | ✅ |
 | 6 | Updating Datas of Rows and Columns | ✅ |
+| 7 | Concatenating and Merging DataFrames | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -47,6 +48,7 @@ AI-Engineer-Journey/
 ├── Day-004/
 ├── Day-005/
 ├── Day-006/
+├── Day-007/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -90,8 +92,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **6 / 200**
-- 🟩 GitHub Streak: **6 Days**
+- 📅 Day: **7 / 200**
+- 🟩 GitHub Streak: **7 Days**
 - 💻 Projects Built: **1**
 - 📚 Major Topics Covered:
   - DataFrames

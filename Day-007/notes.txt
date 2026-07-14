@@ -1,0 +1,52 @@
+Day - 7
+merging functions
+-> df1.append(df2) -> stacking vertically. x
+-> pd.concat([df1, df2]) -> horizontally / vertically
+-> df1.join(df2) : inner/outer/left/right joins on indexes
+-> pd.merge([df1, df2]) : many joins on multiple columns.
+concat and merge are more flexible.
+​merge() :-     (left, right) -> order of arguments
+ex:
+movie_ratings = pd.merge(movies, ratings)
+
+
+​what if the columns you want to join on dont have the same name.
+we use left_on and right_on arguments
+pd.merge(movies, ratings, left_on='m_id', right_on='movie_id')
+
+
+​what if you want to join on one index.
+use left_index = True
+ex:-
+pd.merge(movies, ratings, left_index=True, right_on='movie_id')
+catch:- this uses the index on right data frame (opposite)
+
+
+​3, join using both indexes.
+both left_index = True, and right_index = True.
+​by using how = 'type of join'
+we can do 4 types of join:-
+​Inner join:-
+while joining, data in both dfs only will be merged.
+​Outer join:-
+while joining, all data in the dfs is merged, and missing values are marked as Nan.
+​Left Join:-
+all values of left is present and missing values of data in left is marked as Nan.
+​Right Join:-
+similar but in Right
+​Video - 2
+concat() (by default outer join).
+used to add data of same things under each other.
+​arguments required:-
+[df1/series1, df2/series2]
+-> required adding dfs or series.
+​ignore_index = True
+-> ignores the index they came with and given new index
+​keys = ['key1', 'key2']
+-> specified name printed for each concatenated df
+​Note:-
+when concatenated different data, the missing data from other df will be marked as Nan
+​axis = 1
+-> indecates column concatenation based on index (like merge)
+​join = 'inner'
+-> doesnt return missing values.
