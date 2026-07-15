@@ -35,6 +35,7 @@ Over the next 200 days, I aim to:
 | 5 | Cleaning and Filling Data | ✅ |
 | 6 | Updating Datas of Rows and Columns | ✅ |
 | 7 | Concatenating and Merging DataFrames | ✅ |
+| 8 | Building Mini Analyst Project| ✅ |
 ---
 
 # 📂 Repository Structure
@@ -49,6 +50,7 @@ AI-Engineer-Journey/
 ├── Day-005/
 ├── Day-006/
 ├── Day-007/
+├── Day-008/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -92,8 +94,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **7 / 200**
-- 🟩 GitHub Streak: **7 Days**
+- 📅 Day: **8 / 200**
+- 🟩 GitHub Streak: **8 Days**
 - 💻 Projects Built: **1**
 - 📚 Major Topics Covered:
   - DataFrames
