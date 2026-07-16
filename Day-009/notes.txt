@@ -1,0 +1,42 @@
+Day - 9
+​to convert a column of date and type to date time datatype:-
+df['Date'] = pd.to_datetime(df['Date'])
+permanent changes
+format = 'formatted string'
+for differently formatted datetime string
+-> view python documentation
+​to find dayname of a date:-
+df.loc[0, 'Date'].day_name()
+-> for one row
+​to convert one string to time
+pd.datetime.strptime(<date>, format <if any>)
+​to find dayname of a full series:-
+df['Date'].dt.day_name()
+-> referring to datetime
+​year -> df[Serie].dt.year
+​month -> df[Serie].dt.month
+name ->  "    "    .month_name()
+​day ->   "    "    .day
+​Creating date filters:-
+​filt = (df['Date'] >= '2020')
+-> automatically detects year.
+​to convert one string to datetime:-
+we use
+pd.to_datetime('2019-01-01')
+​ex:-
+filt = df['Date'] >= pd.to_datetime('2019
+​to Resample Data in some other timely basis
+like
+from hour - daily - weekly - monthly
+use resample()
+​ex:-
+df['High'].resample('D')
+-> daily
+M for monthly
+​Pivot
+df.pivot(index='<what u want in rows>', columns=< >, values=<data of what u need>)
+​pd.pivot_table(df, index=, values, aggfunc)
+​export:-
+df.to_csv(<file_path>), index=False)
+-> to not import index
+​df.to_excel(<file_path>)
