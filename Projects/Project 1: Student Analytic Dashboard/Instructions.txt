@@ -12,7 +12,7 @@ pip install pandas
 
 How to Run
 1.Clone the repository:
-git clone https://github.com/thilak091/Ai-Engineer-journey/blob/3ec567e10bacce33ada850c38e6d49864c08ca8e/Projects/Project 1: Student Analytic Dashboard
+git clone https://github.com/thilak091/Ai-Engineer-journey/blob/f12af7e4784295e479c011e97bdfebc80e01dbb3/Projects/Project%201%3A%20Student%20Analytic%20Dashboard
 
 2.Open the project folder.
 Place the dataset (student.csv) in the same directory as dashboard.py.
