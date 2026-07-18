@@ -1,0 +1,79 @@
+Instructions
+Prerequisites
+
+Make sure the following are installed before running the project:
+
+Python 3.10 or above
+Pandas
+
+Install Pandas using:
+
+pip install pandas
+
+How to Run
+1.Clone the repository:
+git clone https://github.com/thilak091/Ai-Engineer-journey/blob/3ec567e10bacce33ada850c38e6d49864c08ca8e/Projects/Project 1: Student Analytic Dashboard
+
+2.Open the project folder.
+Place the dataset (student.csv) in the same directory as dashboard.py.
+
+3.Run the program.
+python dashboard.py
+
+Features:
+
+This dashboard performs:
+
+Dataset inspection
+Overall statistics
+Department-wise analysis
+Top performer identification
+Placement analysis
+Student risk assessment
+Admission trend analysis
+Grade generation
+CSV export of processed data
+Technologies Used
+Python
+Pandas
+Output
+
+The program generates:
+
+A well-formatted analytics report in the terminal.
+A processed dataset (Final.csv) containing additional columns such as:
+Risk
+Grade
+Learning Objectives
+
+This project demonstrates practical usage of:
+
+DataFrames
+Reading and writing CSV files
+Filtering
+GroupBy operations
+Aggregations
+Sorting
+Loops with iterrows()
+DateTime operations
+Pivot tables
+Conditional logic
+Data analysis using Pandas
+Future Improvements
+
+Some planned enhancements include:
+
+Interactive dashboard using Streamlit
+Data visualizations with Matplotlib and Plotly
+Automatic report generation (PDF)
+Machine Learning-based student risk prediction
+Web deployment
+Author
+
+P. Muthumalai Thilak
+
+B.Tech Artificial Intelligence & Data Science
+
+KCG College of Technology
+
+200-Day AI Engineering Journey

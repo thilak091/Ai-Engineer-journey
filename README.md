@@ -28,15 +28,16 @@ Over the next 200 days, I aim to:
 
 | Day | Topic | Status |
 |-----|-----------------------------|:------:|
-| 1 | Pandas Basics | ✅ |
-| 2 | Indexing & Filtering | ✅ |
-| 3 | Sorting & Data Exploration | ✅ |
-| 4 | Grouping & Aggregation | ✅ | 
-| 5 | Cleaning and Filling Data | ✅ |
-| 6 | Updating Datas of Rows and Columns | ✅ |
-| 7 | Concatenating and Merging DataFrames | ✅ |
-| 8 | Building Mini Analyst Project| ✅ |
-| 8 | pivot_table and different Data Sources| ✅ |
+| 001 | Pandas Basics | ✅ |
+| 002 | Indexing & Filtering | ✅ |
+| 003 | Sorting & Data Exploration | ✅ |
+| 004 | Grouping & Aggregation | ✅ | 
+| 005 | Cleaning and Filling Data | ✅ |
+| 006 | Updating Datas of Rows and Columns | ✅ |
+| 007 | Concatenating and Merging DataFrames | ✅ |
+| 008 | Building Mini Analyst Project| ✅ |
+| 009 | pivot_table and different Data Sources| ✅ |
+| 010 | Student Analytics Dashboard(Pandas Completed)| ✅ |
 ---
 
 # 📂 Repository Structure
@@ -53,6 +54,7 @@ AI-Engineer-Journey/
 ├── Day-007/
 ├── Day-008/
 ├── Day-009/
+├── Day-010/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -96,19 +98,12 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **9 / 200**
-- 🟩 GitHub Streak: **9 Days**
-- 💻 Projects Built: **1**
+- 📅 Day: **10 / 200**
+- 🟩 GitHub Streak: **10 Days**
+- 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
-  - DataFrames
-  - Series
-  - Reading CSV Files
-  - Indexing
-  - Filtering
-  - Sorting
-  - Data Exploration
-  - Grouping
-  - Aggregating
+  - Pandas
+  
 
 ---
 
