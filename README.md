@@ -38,6 +38,7 @@ Over the next 200 days, I aim to:
 | 008 | Building Mini Analyst Project| ✅ |
 | 009 | pivot_table and different Data Sources| ✅ |
 | 010 | Student Analytics Dashboard(Pandas Completed)| ✅ |
+| 011 | NumPy Basics | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -55,6 +56,7 @@ AI-Engineer-Journey/
 ├── Day-008/
 ├── Day-009/
 ├── Day-010/
+├── Day-011/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -98,11 +100,12 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **10 / 200**
-- 🟩 GitHub Streak: **10 Days**
+- 📅 Day: **11 / 200**
+- 🟩 GitHub Streak: **11 Days**
 - 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
   - Pandas
+  - NumPy
   
 
 ---

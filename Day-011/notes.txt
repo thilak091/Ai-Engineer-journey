@@ -1,0 +1,127 @@
+Day - 11
+Numpy:-
+A multi dimensional array Library
+ListNumpy
+-> slow-> fast
+-> mixed type-> Fixed types
+-> has more bytes of memory.-> reads less bytes of memory
+-> Non-Contiguous Memory-> contiguous memory (Next to each other)
+-> Less capability-> Lot more capability
+
+Applications
+-> Mathematics (MATLAB Replacement)
+-> plotting (Matplotlib)
+-> Backend (Pandas, Connect 4, Digital Photography)
+-> Machine Learning.
+importing Numpy
+import numpy as np
+How to initialize an array.
+a = np.array([1, 2, 3])
+(arrow pointing to [1, 2, 3]) homogeneous numeric type values
+print(a)
+op:-
+[1 2 3] -> how an array is printed
+2D array:-
+b = np.array([[2, 2], [4, 2]])
+print(b)
+op:-
+[[2, 2]
+[4, 2]]
+To get dimensions of an array:-
+use ndim attribute
+a.ndim => 1
+b.ndim => 2
+to get length of all dimensions
+use shape attribute
+a.shape => returns a tuple of dimensions
+=> (3, )
+b.shape => (2, 3) (arrow pointing to 2 is row, arrow pointing to 3 is column)
+to get data type of an array:-
+a.dtype -> returns string
+int 32
+every numpy array is int 32 by default
+to change dtype of array while creating
+np.array([ < > ], dtype = 'int 16') (arrow pointing to L, dtype)
+to find size of array in bytes:-
+a.itemsize -> size of each element
+a.size -> size of the array (no of elements)
+a.nbytes -> total bytes (size * itemsize)
+to access specific element:-
+(Same as list, but in same bracket)
+a[r, c, other dimension element index]
+(bracket pointing to r, c) same bracket
+To get a specific row:-
+a[r, :]
+L-> slicing to get everything default start=0, stop=end
+this gets the full column)
+to get a specific column:-
+a[:, c]
+L-> all rows of specified column
+to change a specific element:-
+a[1, 5] = num
+L-> accessing
+L-> assigning
+to change a specific row or column:-
+a[:, 2] = 5 -> changes all the values to 5
+a[:, 2] = [1, 2] -> changes the corresponding values to the given list
+3D array example:-
+b = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+A 3 dimensional array has multiple 2 dimension arrays as far i can see
+Initializing Different types of Arrays:-
+a = np.zeros(value) Zeros Matrix/Arrays
+value if num
+Creates a 1D array of num
+value if a tuple in format (1D, 2D, 3D, 4D...)
+creates an array of Dimensions of specified length
+use dtype = 'int 32' to get integer Zeros.
+a = np.ones(values)
+creates array of ones
+np.full(shape, value)
+L-> dimensions and length
+-> value of elements
+np.full_like(another_array, value)
+L-> takes the shape of given array
+L-> puts the specified value
+to create a tuple of random decimals
+np.random.rand(r, c, ...)
+it will be (0, 1) value only.
+to create a tuple of random numbers with other tuples shape
+np.random.random_sample(a.shape)
+L-> takes shape of this array.
+to create a array of random ints
+np.random.randint(start, stop, size=tuple)
+size = (r, c, ...)
+to create identity Matrix:-
+np.identity(num, dtype = 'int 32')
+to repeat an array, on itself
+arr = np.array([[1, 2, 3]]) -> 0 = rows, 1 = columns
+r1 = np.repeat(arr, 3, axis = 0)
+print(r1)
+L-> array to be repeated
+L-> no of times
+op
+[[1 2 3]
+[1 2 3]
+[1 2 3]]
+if 1D array is repeated, every value is repeated instead of whole row
+Note:-
+arrays are similar to lists
+try a=b and change value in b, it reflects on a.
+np.arange(start, stop, step, dtype = < >)
+it is used to create a 1D array of start, stop and step.
+start -> optional -> default=0
+step -> optional -> default => 1 (it can also be floating)
+stop -> exclusive -> necessary
+np.linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=< >)
+returns an 1D array of evenly spaced numbers over a specified mathematical interval
+start: the starting value
+end point:
+True -> stop is included (default)
+False -> stop is excluded
+retstep:
+True: returns (array, step_size calculated)
+L-> in a tuple format
+False: only array (Default)
+dtype:
+the data type of output array
+Default = float.
