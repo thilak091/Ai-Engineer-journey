@@ -32,13 +32,14 @@ Over the next 200 days, I aim to:
 | 002 | Indexing & Filtering | ✅ |
 | 003 | Sorting & Data Exploration | ✅ |
 | 004 | Grouping & Aggregation | ✅ | 
-| 005 | Cleaning and Filling Data | ✅ |
-| 006 | Updating Datas of Rows and Columns | ✅ |
-| 007 | Concatenating and Merging DataFrames | ✅ |
+| 005 | Cleaning & Filling Data | ✅ |
+| 006 | Updating Datas of Rows & Columns | ✅ |
+| 007 | Concatenating & Merging DataFrames | ✅ |
 | 008 | Building Mini Analyst Project| ✅ |
-| 009 | pivot_table and different Data Sources| ✅ |
+| 009 | pivot_table & different Data Sources| ✅ |
 | 010 | Student Analytics Dashboard(Pandas Completed)| ✅ |
 | 011 | NumPy Basics | ✅ |
+| 012 | Advanced Indexing & Boolean Masking | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -57,6 +58,7 @@ AI-Engineer-Journey/
 ├── Day-009/
 ├── Day-010/
 ├── Day-011/
+├── Day-012/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -100,8 +102,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **11 / 200**
-- 🟩 GitHub Streak: **11 Days**
+- 📅 Day: **12 / 200**
+- 🟩 GitHub Streak: **12 Days**
 - 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
   - Pandas

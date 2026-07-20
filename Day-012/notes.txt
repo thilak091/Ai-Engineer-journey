@@ -1,0 +1,67 @@
+Day-12
+​Mathematics of numpy
+​-> a + num:-
+it will add num to all elements of array a.
+​Similarly
+​-> a - num
+​-> a * num
+​-> a / num
+​We can also do
+​a += 2 => will permanently add 2 to every numbers.
+​We can also add both arrays:-
+​a + b means a[0] + b[0] , a[1] + b[1] , etc.
+​In the new array
+[ 1 0 0 1 ] + [ 0 1 1 0 ]
+=> [ 1 1 1 1 ]
+​Mathematical functions
+​np.sin(a)
+np.cos(a)
+​Linear Algebra:-
+​np.matmul(a, b) -> returns an array.
+performs matrix multiplication on a, b only if the normal matrix multiplication rules are satisfied.
+​np.linalg.det(a)
+finds the determinant of the given matrix.
+​Statistics:-
+​np.min(a)
+finds the minimum element in the array a
+​np.max(a)
+finds max.
+​axis = 0 => lowest row
+​axis = 1 => lowest column
+​np.sum(stats)
+Sum of all elements
+​axis = 0 => sum of columns
+axis = 1 => sum of rows
+​ReOrganizing Arrays:-
+​arr.reshape((r, c))
+reshapes the arr to the given size (r, c) and returns the new array
+​np.vstack((a1, a2)) vertical stack
+it stacks a1 on top of a2 and returns the new array. only works when same number of columns.
+​np.hstack((a1, a2)) horizontal stack
+it stacks a1 in front of a2 and returns the new array. only works when same number of rows.
+​Miscellaneous:-
+​np.genfromtxt('data.txt', delimiter=',')
+it is used to generate arrays from a text document of a specified delimiter
+​arr.astype('type')
+returns an array with all values changed to specified type.
+​Boolean Masking and Advanced Indexing:-
+​if i do a condition of an array,
+it returns a boolean Array in which all the elements of True will be True and False will be false.
+​ex
+a = np.array([1, 2, 5, 6])
+a > 3
+[False, False, True, True]
+​by using it like a filter, we can do
+a[a > 3] => [ 5 6 ]
+L> only elements that follow condition
+​Indexing with list:-
+​a = np.array([2, 4, 6, 8, 10, 12])
+a[[1, 3, 5]] => [ 4 8 12 ]
+L> List of indices of elements we want as new array
+L> new array with elements of specified indices
+​np.any(condition, axis=)
+np.all(condition, axis=)
+​i) checks for any element satisfying condition
+ii) checks for all element satisfying condition
+​axis = 0 => rows wise
+axis = 1 => column wise
