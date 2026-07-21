@@ -40,6 +40,7 @@ Over the next 200 days, I aim to:
 | 010 | Student Analytics Dashboard(Pandas Completed)| ✅ |
 | 011 | NumPy Basics | ✅ |
 | 012 | Advanced Indexing & Boolean Masking | ✅ |
+| 013 | Mini Project on Advanced Numpy| ✅ |
 ---
 
 # 📂 Repository Structure
@@ -59,6 +60,7 @@ AI-Engineer-Journey/
 ├── Day-010/
 ├── Day-011/
 ├── Day-012/
+├── Day-013/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -102,8 +104,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **12 / 200**
-- 🟩 GitHub Streak: **12 Days**
+- 📅 Day: **13 / 200**
+- 🟩 GitHub Streak: **13 Days**
 - 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
   - Pandas

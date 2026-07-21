@@ -1,0 +1,14 @@
+Day 13
+to reverse an array :-
+arr[::-1] # same as everything
+np.where(condition, x, y)
+x and y are either both optional or both must be present
+when only condition is given, the result is a single element tuple containing an array of indices of elements that is True for condition
+when all three are given, the result is the array made up of x in position for elements showing True and y for elements showing false.
+np.pad(array, pad_width, mode='constant', **kwargs)
+array: array needed to pad
+pad_width: a number of values added to edge of each axis of array
+mode: default 'constant'
+constant_values: a constant value to be padded with
+np.unravel_index(indices, shape)
+converts flat index(es) into multi-dimensional coordinates of shape.
