@@ -1,0 +1,27 @@
+Day - 14
+Copy()
+Owns its data buffer
+Allocates New Memory
+changes does not affect to original
+slower and memory intensive
+View()
+Does not own the data buffer
+Shares memory with original
+changes do affect original
+Fast and memory efficient
+arr.view()
+creates a view and when modified changes the original array
+Basic slicing, reshape() or view()
+arr.copy()
+A copy duplicates the metadata along with every single data inside the data buffer to a completely distinct block of memory.
+Boolean masking, list indexing or arr.copy()
+arr.base
+it returns None if arr is a copy and an array if arr is a view
+Flattening Arrays:-
+Converting Multidimensional array into a single dimensional array.
+arr.flatten():-
+it is a method used to create a single dimension array (copy) of a multidimensional array
+np.ravel(arr):-
+Returns a flattened (view) of the array arr whenever called. when the values changed here, it will change in the real array.
+np.nditer(arr, order='C')
+it visits elements in an order that matches the underlying memory layout of the array.
