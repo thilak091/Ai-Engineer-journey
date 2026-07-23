@@ -1,0 +1,9 @@
+Day - 15
+np.sort (arr)
+returns a sorted array
+np.argsort (arr)
+returns an array of sorted elements indices
+np.savetxt (file_name, arr)
+Saves array in the form of txt or csv files (delimiter)
+np.loadtxt (file_name)
+gets the array from txt or csv files (delimiter)
