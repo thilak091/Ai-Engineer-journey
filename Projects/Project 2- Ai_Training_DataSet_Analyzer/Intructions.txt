@@ -1,0 +1,93 @@
+AI Training Dataset Analyzer
+
+A beginner-friendly data analysis project built using NumPy as part of my AI & Data Science learning journey.
+
+This project analyzes training metrics of different AI models and generates a clean, professional report directly in the terminal.
+
+Features
+Dataset Information
+Overall Training Statistics
+Best Performing Model
+Fastest Training Model
+Lowest Loss Model
+Model Ranking by Accuracy
+Dataset Health Check
+Boolean-Based Analysis
+Fine-Tuning Simulation
+Export Updated Dataset to CSV
+Clean and Structured Terminal Report
+Dataset
+
+The project analyzes five AI models using the following metrics:
+
+Number of Training Images
+Model Accuracy (%)
+Training Time (minutes)
+Loss Value
+
+Models included:
+
+CNN
+ResNet
+MobileNet
+EfficientNet
+Vision Transformer
+Concepts Used
+
+This project demonstrates practical use of NumPy concepts, including:
+
+NumPy Arrays
+Indexing & Slicing
+Statistical Functions
+Boolean Masking
+Vectorized Operations
+Sorting with argsort()
+Aggregation Functions
+Matrix Manipulation
+Array Updating
+Saving Data using np.savetxt()
+
+Sample Output
+
+The program generates a report containing:
+
+Dataset Information
+Training Statistics
+Best Model Analysis
+Fastest Model
+Lowest Loss Model
+Accuracy Rankings
+Dataset Health Report
+Boolean Analysis
+Fine-Tuning Results
+Dataset Export Confirmation
+What I Learned
+
+While building this project, I learned how to:
+
+Analyze structured datasets using NumPy
+Perform vectorized computations instead of loops
+Rank and compare models using statistical metrics
+Build professional terminal-based reports
+Export processed datasets for future use
+How to Run
+Clone this repository.
+git clone https://github.com/your-username/your-repository.git
+Navigate to the project folder.
+cd Day-015
+Run the Python file.
+python ai_training_dataset_analyzer.py
+Future Improvements
+Read datasets directly from CSV files
+Support dynamic datasets of any size
+Add visualizations using Matplotlib
+Compare multiple training runs
+Export reports in Excel or PDF format
+Tech Stack
+Python
+NumPy
+About This Project
+
+This project was created as part of my structured 200-Day AI & Data Science Learning Journey, where I build a practical project after completing every major topic instead of only watching tutorials.
+
+If you have suggestions or feedback, feel free to open an issue or connect with me on LinkedIn
