@@ -1,0 +1,41 @@
+Day - 16
+importing Matplotlib correctly
+from matplotlib import pyplot as plt
+basic plotting
+plt.plot(x_list, y_list)
+plots a graph
+x_list = list of values of x axis
+y_list = list of values of y axis
+label = Name given to the plot without displaying
+plt.title(' ')
+gives the title to the graph
+plt.xlabel(' ') & plt.ylabel(' ')
+gives x and y label to the plotted graph
+Note:-
+to have multiple line plots, just use plot() multiple times with different datas.
+plt.legend([' '])
+it gives names to the plotted lines which is on the given list in the order of which is plotted first.
+when the plots are labeled, just use plt.legend() emptily to name them acc to the label given already.
+extra parameters of plot
+color = ' ' #char
+'k' = black
+'r', 'g', 'b' = red, green, blue
+can also be hex value ex: '#444444'
+linestyle = ' '
+'-' for single line dashed line
+'--' for double dashed line
+marker = ' ' #plotting point
+'.' = small point
+'o' = bigger point
+linewidth = #int value of line width
+1 = default
+plt.grid(True)
+adds a grid to the graph.
+easy to view
+plt.style.available
+an attribute that returns the list of available styles
+plt.style.use(' ')
+used to change the style of plotting to the given
+recomended = 'fivethirtyeight'
+plt.savefig(' .png')
+saves the plotted graph as png file of given name.

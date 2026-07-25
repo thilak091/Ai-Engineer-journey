@@ -42,7 +42,8 @@ Over the next 200 days, I aim to:
 | 012 | Advanced Indexing & Boolean Masking | ✅ |
 | 013 | Mini Project on Advanced Numpy| ✅ |
 | 014 | Flattening, Viewing & Copying| ✅ |
-| 014 |Ai_Training_DataSet_Analyzer (Numpy Completed)| ✅ |
+| 015 |Ai_Training_DataSet_Analyzer (Numpy Completed)| ✅ |
+| 016| Matplotlib Basics and line Graphs| ✅ |
 ---
 
 # 📂 Repository Structure
@@ -65,6 +66,7 @@ AI-Engineer-Journey/
 ├── Day-013/
 ├── Day-014/
 ├── Day-015/
+├── Day-016/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -108,12 +110,13 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **15 / 200**
-- 🟩 GitHub Streak: **15 Days**
+- 📅 Day: **16 / 200**
+- 🟩 GitHub Streak: **16 Days**
 - 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
   - Pandas
   - NumPy
+  - Matplotlib
   
 
 ---
