@@ -1,0 +1,48 @@
+Day - 17
+bar charts
+plt.bar( x , y , . . . . )
+used to draw bar charts
+Note :-
+If we use multiple bars, it will overlap each other.
+to solve this
+i, create an np array using arange(len(x_values)) and plot the bars x values using the index array that we created.
+ii, add a custom width,
+ex.
+width = 0.5
+and use width parameter in bar() to make every bar same width.
+iii, add or subtract our set width to get differently aligned bars
+iv, use plt.xticks(ticks=[  ], labels=[  ])
+to change the x values present to the given label values.
+Csv files:-
+using python default csv module
+ex:-
+with open('data.csv') as file
+csv_reader = csv.DictReader(file)
+for row in csv_reader:
+print(row)
+now to count individual values present in csv file.
+we can use another module
+from collections import Counter
+c = Counter([  ])
+to initially give what values to count
+c.update([])
+to update the counting with given values.
+c.most_common(num)
+returns the top num highest values along with count as list of tuples.
+to unzip these values, create 2 lists, iterate through the most_common() and append to both lists.
+plt.barh()
+plots horizontal bars.
+Pandas way to open csv:-
+read_csv(file)
+Then x axis = df['column name']
+y axis = df['column name']
+and then plot :)
+Video - 2 Histograms.
+histogram creates bins for data and see how many data falls in that bin
+plt.hist(value_list, bins=num/list, edgecolor=' ')
+bins = num => that num of bins are created
+= list => that each element and next element range is one bin and next bin, etc. that much bins
+edgecolor = ' ' to differentiate bins
+to plot a differentiating vertical line
+plt.axvline(value, color=' ', label=' ')
+-> needed to be legend.

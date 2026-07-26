@@ -35,15 +35,16 @@ Over the next 200 days, I aim to:
 | 005 | Cleaning & Filling Data | ✅ |
 | 006 | Updating Datas of Rows & Columns | ✅ |
 | 007 | Concatenating & Merging DataFrames | ✅ |
-| 008 | Building Mini Analyst Project| ✅ |
-| 009 | pivot_table & different Data Sources| ✅ |
-| 010 | Student Analytics Dashboard(Pandas Completed)| ✅ |
+| 008 | Building Mini Analyst Project | ✅ |
+| 009 | pivot_table & different Data Sources | ✅ |
+| 010 | Student Analytics Dashboard(Pandas Completed) | ✅ |
 | 011 | NumPy Basics | ✅ |
 | 012 | Advanced Indexing & Boolean Masking | ✅ |
-| 013 | Mini Project on Advanced Numpy| ✅ |
-| 014 | Flattening, Viewing & Copying| ✅ |
-| 015 |Ai_Training_DataSet_Analyzer (Numpy Completed)| ✅ |
-| 016| Matplotlib Basics and line Graphs| ✅ |
+| 013 | Mini Project on Advanced Numpy | ✅ |
+| 014 | Flattening, Viewing & Copying | ✅ |
+| 015 | Ai_Training_DataSet_Analyzer (Numpy Completed) | ✅ |
+| 016 | Matplotlib Basics and line Graphs | ✅ |
+| 017 | Barcharts and Histograms | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -67,6 +68,7 @@ AI-Engineer-Journey/
 ├── Day-014/
 ├── Day-015/
 ├── Day-016/
+├── Day-017/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -110,8 +112,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **16 / 200**
-- 🟩 GitHub Streak: **16 Days**
+- 📅 Day: **17 / 200**
+- 🟩 GitHub Streak: **17 Days**
 - 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
   - Pandas
