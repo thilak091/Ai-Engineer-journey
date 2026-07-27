@@ -45,6 +45,7 @@ Over the next 200 days, I aim to:
 | 015 | Ai_Training_DataSet_Analyzer (Numpy Completed) | ✅ |
 | 016 | Matplotlib Basics and line Graphs | ✅ |
 | 017 | Barcharts and Histograms | ✅ |
+| 018 | PieCharts, StackPlots and Filling | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -69,6 +70,7 @@ AI-Engineer-Journey/
 ├── Day-015/
 ├── Day-016/
 ├── Day-017/
+├── Day-018/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -112,8 +114,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **17 / 200**
-- 🟩 GitHub Streak: **17 Days**
+- 📅 Day: **18 / 200**
+- 🟩 GitHub Streak: **18 Days**
 - 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
   - Pandas
