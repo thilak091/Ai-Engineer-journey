@@ -46,6 +46,7 @@ Over the next 200 days, I aim to:
 | 016 | Matplotlib Basics and line Graphs | ✅ |
 | 017 | Barcharts and Histograms | ✅ |
 | 018 | PieCharts, StackPlots and Filling | ✅ |
+| 019 | Scatter Plots and its Uses | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -71,6 +72,7 @@ AI-Engineer-Journey/
 ├── Day-016/
 ├── Day-017/
 ├── Day-018/
+├── Day-019/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -114,8 +116,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **18 / 200**
-- 🟩 GitHub Streak: **18 Days**
+- 📅 Day: **19 / 200**
+- 🟩 GitHub Streak: **19 Days**
 - 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
   - Pandas
