@@ -1,0 +1,55 @@
+Day - 20 1/10th
+datetime module:-
+used to work with dates and times.
+datetime.datetime(YYYY, MM, DD)
+converts the 4digit Year, 2digit Month and Day to Datetime Object.
+to plot dates vs value:-
+plt.plot_date(dates, y, linestyle='solid')
+-> to get line graph
+To change the Date format to our requirements:-
+i) from matplotlib import dates as mpld
+ii) date_format = mpld.DateFormatter('%d %b %Y')
+-> our date format
+this is used to get our date Formatters
+iii) plt.gca().xaxis.set_major_formatter(date_format)
+this is how to set our date formatter to the plot
+to format our date angles:-
+plt.gcf().autofmt_xdate()
+from a csv file
+df = pd.read_csv('file')
+Then
+data as usual change date to real date
+df['Date'] = pd.to_datetime(df['Date'])
+to sort out dates.
+use
+data.sort_values('Date', inplace=True)
+Then format, format date, etc.
+Plotting Live Data
+ex:-
+from matplotlib.animation import FuncAnimation
+def animate(i):
+x_vals.append(next(index))
+y_vals.append(random.randint(0, 5))
+plt.cla()
+plt.plot(x_vals, y_vals)
+ani = FuncAnimation(plt.gcf(), animate, interval=1000)
+from matplotlib.animation import FuncAnimation
+it imports FuncAnimation that runs a function of a graph at set intervals.
+plt.cla()
+it clears the graph's axis. used to work on same graph.
+ani = FuncAnimation(plt.gcf(), <fn_name>, interval= )
+<fn_name> = function to call
+interval = interval between calls in millisecond
+1000 ms = 1 second.
+for csv files:-
+the animate fn looks like
+def animate(i):
+data = pd.read_csv('data.csv') # file of continuously changing value
+x = data['x_value']
+y1 = data['y1_value']
+y2 = data['y2_value']
+plt.cla()
+plt.plot(x, y1, label="Channel 1")
+plt.plot(x, y2, label="Channel 2")
+plt.legend(loc='upper left') # if not, it constantly changes
+plt.tight_layout()
