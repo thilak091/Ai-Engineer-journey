@@ -48,6 +48,7 @@ Over the next 200 days, I aim to:
 | 018 | PieCharts, StackPlots and Filling | ✅ |
 | 019 | Scatter Plots and its Uses | ✅ |
 | 020 | Plotting Time Data And Live Data | ✅ |
+| 021 | SubPlots , Figures and Axis' | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -75,6 +76,7 @@ AI-Engineer-Journey/
 ├── Day-018/
 ├── Day-019/
 ├── Day-020/
+├── Day-021/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -118,8 +120,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **20 / 200**
-- 🟩 GitHub Streak: **20 Days**
+- 📅 Day: **21 / 200**
+- 🟩 GitHub Streak: **21 Days**
 - 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
   - Pandas

@@ -1,0 +1,17 @@
+Day 21
+Sub Plots
+getting all figures (windows of graphs) and axis (all plotted things)
+fig, ax = plt.subplots(nrows= , ncols= )
+by forming rows and columns, we can plot like 2 graphs, 4 graphs (2 up, 2 down), 3 in a line (row), etc.
+sharex = True # only "label" one x label for the graphs
+sharey = True # only "label" one y label for the graph
+1 fig Multi axis means one window multiple graphs
+multi fig, 1 axis, means multiple windows with each one graph.
+to create multiple figures, run subplot multiple times.
+now to set title, xlabel, ylabel and legend alone, we use
+ax.set_title()
+ax.set_xlabel()
+ax.set_ylabel()
+ax.legend()
+to work on multiple axis, we need to unpack the ax variable
+fig, (ax1, ax2) = plt.subplots(nrows=2, ncols=1)
