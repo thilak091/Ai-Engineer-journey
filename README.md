@@ -49,6 +49,7 @@ Over the next 200 days, I aim to:
 | 019 | Scatter Plots and its Uses | ✅ |
 | 020 | Plotting Time Data And Live Data | ✅ |
 | 021 | SubPlots , Figures and Axis' | ✅ |
+| 022 | Job Statistics DashBoard (MatPlotLib Completed) | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -77,6 +78,7 @@ AI-Engineer-Journey/
 ├── Day-019/
 ├── Day-020/
 ├── Day-021/
+├── Day-022/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -120,8 +122,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **21 / 200**
-- 🟩 GitHub Streak: **21 Days**
+- 📅 Day: **22 / 200**
+- 🟩 GitHub Streak: **22 Days**
 - 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
   - Pandas
