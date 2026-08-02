@@ -50,6 +50,7 @@ Over the next 200 days, I aim to:
 | 020 | Plotting Time Data And Live Data | ✅ |
 | 021 | SubPlots , Figures and Axis' | ✅ |
 | 022 | Job Statistics DashBoard (MatPlotLib Completed) | ✅ |
+| 023 | Integration Project Done | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -79,6 +80,7 @@ AI-Engineer-Journey/
 ├── Day-020/
 ├── Day-021/
 ├── Day-022/
+├── Day-023/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -122,8 +124,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **22 / 200**
-- 🟩 GitHub Streak: **22 Days**
+- 📅 Day: **23 / 200**
+- 🟩 GitHub Streak: **23 Days**
 - 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
   - Pandas
