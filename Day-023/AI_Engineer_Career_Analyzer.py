@@ -52,8 +52,8 @@ print('                   STATISTICAL DATA')
 print(f'Mean Python Score: {np.mean(df['python_score'])}\n')
 print(f'Mean ML Score: {np.mean(df['ml_score'])}\n')
 print(f'Standard Deviation: {np.std(df['study_hours'],ddof=1):.3f}\n')
-print(f'Maximum GitHub commits: {np.argmax(df['github_commits'])}\n')
-print(f'Minimum attendance: {np.argmin(df['attendance'])}\n')
+print(f'Maximum GitHub commits: {np.max(df['github_commits'])}\n')
+print(f'Minimum attendance: {np.min(df['attendance'])}\n')
 p90=np.percentile(df['ml_score'],90)
 print('Top Percentile Students in ML Scores:')
 print(df.loc[df['ml_score'] > p90,'name'],'\n')
@@ -89,10 +89,10 @@ ax3.set_xlabel('Projects COmpleted')
 ax3.set_ylabel('GitHub Commits')
 
 #Placement readiness distribution.
-ax4.pie([(df['placement_ready'] == 'Yes').sum(),(df['placement_ready'] == 'Yes').sum()],
+ax4.pie([(df['placement_ready'] == 'Yes').sum(),(df['placement_ready'] == 'No').sum()],
         colors=['tab:green','tab:red'],shadow=True,labels=['Yes','No'],
         autopct='%1.1f%%',startangle=90,pctdistance=0.7,
-labeldistance=1.1)
+labeldistance=1.1,explode=[0,0.13])
 
 #Internship status distribution.
 counts = df['internship_status'].value_counts()
