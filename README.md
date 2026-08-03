@@ -51,6 +51,7 @@ Over the next 200 days, I aim to:
 | 021 | SubPlots , Figures and Axis' | ✅ |
 | 022 | Job Statistics DashBoard (MatPlotLib Completed) | ✅ |
 | 023 | Integration Project Done | ✅ |
+| 023 | Fundamentals of Machine Learning | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -81,6 +82,7 @@ AI-Engineer-Journey/
 ├── Day-021/
 ├── Day-022/
 ├── Day-023/
+├── Day-024/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -124,13 +126,14 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **23 / 200**
-- 🟩 GitHub Streak: **23 Days**
+- 📅 Day: **24 / 200**
+- 🟩 GitHub Streak: **24 Days**
 - 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
   - Pandas
   - NumPy
   - Matplotlib
+  - Scikit-Learn
   
 
 ---

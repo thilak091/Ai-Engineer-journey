@@ -1,0 +1,69 @@
+Day - 24
+Machine Learning
+What is Machine Learning?
+-> Semi-Automated Extraction of knowledge from data
+-> Semi-Automated
+Types:
+Supervised Learning
+Unsupervised Learning
+Supervised Learning
+Making predictions using data //
+(email/spam)
+specific outcome we are trying to predict.
+Unsupervised Learning
+Extracting structure from data.
+or Learning how to best represent data
+There is no right answers.
+(grouping / segregating tasks)
+How does Machine Learning work?
+1, Train ML model, using existing labeled data.
+ex: spam is labeled as spam
+In this, the model learns the relationship of the attributes of the data and the outcome.
+2, Then, make predictions on new data for which the label is unknown.
+Video-2
+Benifits:- Scikit Learn:-
+-> consistent interface
+-> provides many tuning parameters
+-> exceptional documentation
+potential Drawbacks:-
+-> Harder (than R) to get into ML
+-> Less emphasis (than R) on model interpretability.
+Video-3
+Iris Dataset:-
+Dataset made using 150 samples of Iris flower
+-> it has sepal length, width
+petal length, width
+ML Terms
+row => observation / sample / example / instance / record
+column => feature / predictor / attribute / input / regressor / covariate
+each predicted value => response / target / outcome / label value
+Two types of Supervised learning
+Classification
+-> response is categorical
+Regression
+-> Response is ordered and continuous
+Requirements for working with data in Scikit-learn
+1, Features and responses are separate objects
+2, Features and responses should be numeric
+3, Features and response should be in np.arrays
+4, Features and responses should have specific shapes
+-> Features -> first dim -> rows = no. of observations
+-> second dim -> columns = number of features (attributes)
+-> Responses -> only one dim -> number of observations
+(Types of target)
+(one for one observation)
+This data set is used to find the Iris species with length and width of sepals and petals
+hence supervised learning
+Importing Iris Dataset:-
+from sklearn.datasets import load_iris
+getting iris as an object:-
+iris = load_iris() // saved as bunch object
+bunch => special container object of sklearn
+attributes of iris
+iris.data
+will give all the measurements without the species
+iris.feature_names
+will give name of the 4 features
+iris.target and iris.target_names
+prints out the species in number and in names respectively
+
