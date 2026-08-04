@@ -1,0 +1,100 @@
+Day-25
+K nearest Neighbours:
+-> pick a value of k
+-> Search for the K observation in the training data that are nearest to the measurements of the unknown iris
+-> Use the most popular response value from the k nearest neighbours as the predicted response of the value of the unknown iris
+to build a KNN model for iris dataset:
+Loading
+iris = load_iris()
+X = iris.data // Matches the Requirement
+y = iris.targets
+Scikit Learn 4-step Modeling Pattern
+Step 1:-
+Import the class you plan to use
+ex:
+from sklearn.neighbors import KNeighborsClassifier # KNN
+Step 2:- "Instantiate" the "estimator"
+estimator - Model
+instantiate - create an object of
+ex:
+knn = KNeighborsClassifier(n_neighbors=1)
+n_neighbors => tuning parameter/hyperparameter
+Step 3:-
+Fit the model with data (Model training) done by fit method
+ex:
+knn.fit(X, y)
+Step 4:-
+Predict the response for a new Observation
+-> New observation are called Out of sample data
+-> to predict, it uses the info it learned during the model training process.
+use knn.predict(List)
+List = [all measurements of features in data trained]
+ex: 4 measurements
+ex:
+knn.predict([3, 5, 4, 2])
+-> Returns an array
+for multiple observations give nested Lists
+Different Model
+ex:-
+from sklearn.linear_model import LogisticRegression
+logreg = LogisticRegression()
+logreg.fit(X, y)
+logreg.predict(X_new)
+Evaluation Procedure
+1, Train and Test on Entire Dataset
+Step 1:-
+Train the model on the entire dataset
+Step 2:-
+Test the model on the same dataset, and evaluate how well we did by comparing the predicted response values with the true response values
+ex
+logreg = LogisticRegression()
+logreg.fit(X, y) # training
+ypred = logreg(X) # testing on same dataset
+Classification Accuracy:
+-> Ratio of correct predictions to overall predictions
+-> a common "evaluation metric" for classification problems
+to find Classification Accuracy:
+from sklearn import metrics
+print(metrics.accuracy_score(y, y_pred))
+-> when trained and tested on same data, it is known as Training accuracy.
+Evaluation Procedure 2
+Train / Test Split
+1, Split the dataset into pieces:
+a training set
+a testing set
+2, Train the model on the training set
+3, Test the Model on the testing set and evaluate how well we did
+Step 1:
+to split data
+from sklearn.cross_validation import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4)
+0.4 = 40% for test
+0.5 = 50% for test etc.
+parameter
+random_state = 4 # same way of splitting all the time
+Step 2:- train
+ex:-
+logreg = LogisticRegression()
+logreg.fit(X_train, y_train)
+Step 3:- Test and Evaluate
+ex:-
+y_pred = logreg(X_test)
+print metrics.accuracy_score(y_test, y_pred)
+how to Locate Better value for k
+Steps:
+k_range = range(1, 26) # ex
+scores = []
+for k in k_range:
+knn = KNeighborsClassifier(n_neighbors=k)
+knn.fit(X_train, y_train)
+y_pred = knn.predict(X_test)
+scores.append(metrics.accuracy_score(y_test, y_pred))
+Step 2:- to easily view
+matplotlib
+plt.plot(k_range, scores)
+plt.xlabel('Values of K')
+plt.ylabel('Testing accuracy')
+Note
+-> Training Accuracy rises as model complexity increases
+-> Testing Accuracy penalizes models that are too complex or not complex enough
+-> for KNN models, complexity is determined by value of k (lower value = more complex)
