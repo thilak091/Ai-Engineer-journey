@@ -1,0 +1,38 @@
+Day-26
+Linear Regression
+A Model that is widely used for Regression Problems
+ex:-
+predicting sales values
+to import Linear Regression
+from sklearn.linear_model import LinearRegression
+linreg = LinearRegression()
+the model predicts by
+y = β0 + β1x1 + β2x2 ... βnxn
+x = no of features
+β = coefficient of features -> will be calculated by model
+β0 = intercept, when all x = 0
+to find intercept and coefficients
+use print(linreg.intercept_)
+print(linreg.coef_)
+Metrics used in Regression
+Mean Absolute Error
+it is the sum of difference in predicted and true divided by no of predictions
+1/n * Σ_{i=1}^n |yi - ŷi|
+ex:-
+(a-b) + (c-d) + (e-f) / 3
+In scikit learn:-
+mae = metrics.mean_absolute_error(true, pred)
+Mean Squared Error:-
+Sum of Square of differences divided by n
+1/n * Σ_{i=1}^n (yi - ŷi)^2
+in sklearn:-
+mse = metrics.mean_squared_error(true, pred)
+Root mean Squared error:-
+it is the root of difference of squares of divided by n
+sqrt( 1/n * Σ_{i=1}^n (yi - ŷi)^2 )
+in sklearn:-
+rmse = np.sqrt(metrics.mean_squared_error(true, pred))
+difference
+MAE -> easier to understand cuz it's avg error
+MSE -> it punishes larger error
+RMSE -> RMSE is interpretable in y units

@@ -52,7 +52,8 @@ Over the next 200 days, I aim to:
 | 022 | Job Statistics DashBoard (MatPlotLib Completed) | ✅ |
 | 023 | Integration Project Done | ✅ |
 | 024 | Fundamentals of Machine Learning | ✅ |
-| 023 | Leaned About KNN , Model Training & Evaluation | ✅ |
+| 025 | Leaned About KNN , Model Training & Evaluation | ✅ |
+| 026 | Linear Regression Model On Diabetes Dataset | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -85,6 +86,7 @@ AI-Engineer-Journey/
 ├── Day-023/
 ├── Day-024/
 ├── Day-025/
+├── Day-026/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -128,8 +130,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **25 / 200**
-- 🟩 GitHub Streak: **25 Days**
+- 📅 Day: **26 / 200**
+- 🟩 GitHub Streak: **26 Days**
 - 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
   - Pandas
