@@ -1,0 +1,85 @@
+Day-27
+Drawbacks of Train-Test_split?
+The accuracy varies on which observation present in the training set.
+So what IF:-
+we created multiple tts and calculate accuracy and find Average?
+This is called CROSS-VALIDATION
+Steps for K-fold cross-validation
+1, Split the Dataset into K equal partitions (or "folds") of equal size.
+2, Use fold 1 as testing set and the union of others as the training set.
+3, Calculate Testing Accuracy
+4, Repeat Step 2 and 3 K times, using a different fold as the testing set each time.
+5, Use the average testing accuracy as the estimate of out of sample accuracy.
+This allows us to find the Best Model for our data.
+to import Kfold
+from sklearn.cross_validation import KFold
+kf = KFold(data, n_folds=num, shuffle=False)
+Cross Validation Recommendations:-
+1, K can be any number, but K=10 is generally recommended.
+2, For classification problems,
+Stratified sampling is recommended for creating folds.
+-> Each response should be represented with equal proportions in each of the K Folds.
+-> scikit-learn's cross_val_score function does this by default.
+to use cross_validation_score directly:-
+from sklearn.cross_validation import cross_val_score
+then create a model
+then
+scores = cross_val_score(knn, X, y, cv=10, scoring='accuracy')
+L-> model L-> data L-> target L-> folds
+to get mean
+scores.mean()
+Parameter Tuning / Best k for KNN
+1, Loop through 30 Numbers
+2, Create Model, find score using CVS
+3, append to list and repeat
+4, plot graph
+for selection (best value of k)
+priority -> Most accuracy
+-> Least Complex / Most K value.
+for Model Selection:-
+Compare CVS of knn with best value of k
+(VS)
+Logistic Regression
+Scoring parameter:-
+scoring = 'accuracy' -> accuracy of predictions
+will be neg <- 'mean_absolute_error' -> MAE of pred
+will be neg <- 'mean_squared_error' -> MSE of pred
+NO RMSE
+Video 2
+Efficient Parameter Tuning:-
+we found best K value in a loop
+to automate this
+|
+v
+GridSearchCV
+ex:-
+from sklearn.grid_search import GridSearchCV
+k_range = range(1, 31)
+param_grid = dict(n_neighbors = k_range)
+Instantiating Grid
+grid = GridSearchCV(knn, param_grid, cv=10, scoring='accuracy')
+dict<<        n_jobs = -1
+|
+v
+parallel computing
+(all cores at same time)
+we have to fit the grid with data
+grid.fit(X, y)
+to view results
+grid.grid_scores_ # inlined
+examining best model
+print(grid.best_score_)
+print(grid.best_params_)
+print(grid.best_estimator_)
+Using best parameters to make predictions.
+use the best parameters in the model and predict
+(or)
+grid.predict([   ]) # automatically fits the best data model
+Reduced Computational Expense:-
+RandomizedSearchCV
+from sklearn.grid_search import RandomizedSearchCV
+=> same params list instead of param_grid
+rand = RandomizedSearchCV(knn, param_dist, cv=10, scoring='accuracy', n_iter=10, random_state=5)
+|            L-> stays same
+v
+number of different possibilities you want to check
