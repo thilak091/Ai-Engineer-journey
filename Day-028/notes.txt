@@ -1,0 +1,115 @@
+Day - 28
+Evaluating a Classifier model
+Null Accuracy:
+Accuracy achieved by always predicting frequent class
+to find it:-
+find all value counts in classes
+find the percentage of highest class
+-> This null accuracy acts as the baseline of our model
+Conclusion :-
+-> Classification Accuracy is the easiest to understand metric
+-> But it does not tell you the underlying distribution of response values
+ex: model can predict 0 forever.
+-> It does not tell you what type of errors classifier is making
+Confusion Matrix
+Table that describes the performance of a classification model
+ex:-
+print(metrics.confusion_matrix(y_test, y_pred))
+test      pred
+diagram
+correct <- Pred 0  Predicted 1
+Actual 0 |  118  |    112    | -> errors
+Predicted|   47  |     15    |
+Actual 1   ------             -> incorrect
+|
+errors
+Note
+-> every way of possible observation is represented in exactly one box
+-> it's a 2x2 matrix because there are 2 response class
+Basic Terminologies
+True positive (TP) (Bottom right box):-
+ex: we correctly predicted user had diabetes
+True Negative (TN) (Upper left):-
+ex: we correctly predicted the didn't have diabetes.
+False Positives (FP):- (Upper Right)
+we incorrectly predicted they have diabetes
+False Negatives (FN):- (Bottom Left)
+we incorrectly predicted they didn't have diabetes
+False Positive -> Type I error
+False Negative -> Type II error
+Classification Accuracy (in terms of CM)
+=> CA = (TP + TN) / (TP + TN + FP + FN)
+Classification Error
+-> how often is the predictions incorrect
+CE = (FP + FN) / (TP + TN + FP + FN)
+(or)
+CE = 1 - metrics.accuracy_score(y_test, y_pred)
+Recall (aka Sensitivity)
+When the actual value is positive, how often is prediction correct?
+Recall = correctly predicted positive / total Present Positives
+ex = correctly predicted spam / total Present of spam
+In code:
+Recall = TP / (TP + FN)
+recall = metrics.recall_score(y_test, y_pred)
+Specificity
+When the actual value is negative, how often it is correct.
+Speci = correctly predicted Negatives / total present of negatives.
+code :-
+speci = TN / (TN + FP)
+False Positive Rate
+When the Actual value is Negative, how often is prediction incorrect
+code
+FPR = FP / (TN + FP)
+Precision:
+When Positive Value is predicted, how often is the prediction Correct.
+code
+Precision = TP / (FP + TP)
+(or)
+precision = metrics.precision_score(y_test, y_pred)
+Adjusting Classifier Threshold (Last Step)
+in a 2 system classification (ex diabetes)
+a model predicts 1 if probability of 1 >= 0.5
+a model predicts 0 if probability of 0 < 0.5
+so default threshold = 0.5
+case (1) if you feel a model has less sensitivity/Recall
+Recall = correctly predicted True / Total True present
+then decrease threshold (to say 0.3)
+here specificity also decreases
+to do this use binarize
+from sklearn.preprocessing import binarize
+y_pred_new = binarize(y_pred_prob, 0.3)[0]
+|                |-> 1st dimension are predictions
+L-> probability distribution
+found by
+y_pred_prob = model.predict_proba(X_test)
+now
+metrics.confusion_matrix(y_test, y_pred_new)
+|-> to get new things and evaluation
+ROC Curves:
+Wouldn't it be nice if we could see how sensitivity and specificity are affected by various thresholds, without changing the threshold beforehand
+Answer Plot ROC curve
+to do this
+fpr, tpr, thresholds = metrics.roc_curve(y_test, y_pred_prob)
+|                 |
+True values          probabilities
+plt.plot(fpr, tpr)
+plt.xlim([0.0, 1.0])
+plt.ylim([0.0, 1.0])
+plt.xlabel()
+plt.ylabel()
+this creates
+1- Specificity in x-axis (so higher means good)
+Recall/Sensitivity in y-axis (so higher means good)
+But:
+This does not allow you to see the thresholds directly so
+we create a function
+we can now check for whatever threshold we wanna see
+Area Under the Curve
+AUC is the percentage of the ROC plot that is underneath the curve.
+-> it is a Single number summary (higher=better)
+we can do this normally by
+auc = metrics.roc_auc_score(y_test, y_pred_prob)
+|
+probability
+(or) we can find it for cross-val by
+auc = cross_val_score(model, X, y, cv=num, scoring='roc_auc').mean()

@@ -55,6 +55,7 @@ Over the next 200 days, I aim to:
 | 025 | Leaned About KNN , Model Training & Evaluation | ✅ |
 | 026 | Linear Regression Model On Diabetes Dataset | ✅ |
 | 027 | K-Fold & Grid Search Model Evaluations | ✅ |
+| 028 | Evaluating Classifier Models , Confusion Matrix etc | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -89,6 +90,7 @@ AI-Engineer-Journey/
 ├── Day-025/
 ├── Day-026/
 ├── Day-027/
+├── Day-028/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -132,8 +134,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **27 / 200**
-- 🟩 GitHub Streak: **27 Days**
+- 📅 Day: **28 / 200**
+- 🟩 GitHub Streak: **28 Days**
 - 💻 Projects Built: **2**
 - 📚 Major Topics Covered:
   - Pandas
