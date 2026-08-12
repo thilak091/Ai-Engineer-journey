@@ -58,6 +58,7 @@ Over the next 200 days, I aim to:
 | 028 | Evaluating Classifier Models , Confusion Matrix etc | ✅ |
 | 029 | OneHotEncoder , Column Transformer & Pipelines | ✅ |
 | 030 | ML Student Placement Predictor (Project) | ✅ |
+| 031 | Decision Trees and Classification  | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -95,6 +96,7 @@ AI-Engineer-Journey/
 ├── Day-028/
 ├── Day-029/
 ├── Day-030/
+├── Day-031/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -138,8 +140,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **30 / 200**
-- 🟩 GitHub Streak: **30 Days**
+- 📅 Day: **31 / 200**
+- 🟩 GitHub Streak: **31 Days**
 - 💻 Projects Built: **3**
 - 📚 Major Topics Covered:
   - Pandas

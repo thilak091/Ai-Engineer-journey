@@ -1,0 +1,32 @@
+Day - 31
+Decision Trees:
+a Tree that is made up of conditions with multiple nodes for its Yes or No.
+Classification using Decision Tree
+a decision tree built using a feature and its categories
+ex:- playing tennis Target = Yes / No
+feature = Weather
+categories = Sunny, Cloudy, Rainy
+tree:-
+[ Weather ] 9Y/5N -> total responses
+/     |     
+/      |      
+2Y/3N /  4Y/0N|       \ 3Y/2N
+/        |        
+(Sunny)    (Cloudy)    (Rainy)
+|           |
+Pure Node   Impure node.
+Pure split:-
+when the categorical result of that particular category is one-sided.
+ex: when it's cloudy, 4 'Yes' and 0 Nos
+When an impure split is reached, another feature is selected and splitted category wise and is repeated until every leaf node becomes a pure node.
+1, How to calculate Purity in Coding.
+-> Using Entropy
+-> Gini Co-efficient.
+2, How to use proper features and select proper features.
+-> Which ever feature has the highest information gain.
+code:-
+from sklearn.tree import DecisionTreeClassifier
+classifier = DecisionTreeClassifier() #defaultly set to best
+classifier.fit(x,y)
+from sklearn import tree
+from matplotlib import pyplot as plt
