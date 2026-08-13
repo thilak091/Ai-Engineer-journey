@@ -59,6 +59,7 @@ Over the next 200 days, I aim to:
 | 029 | OneHotEncoder , Column Transformer & Pipelines | ✅ |
 | 030 | ML Student Placement Predictor (Project) | ✅ |
 | 031 | Decision Trees and Classification  | ✅ |
+| 032 | Random Forest Classification and Tuning it  | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -97,6 +98,7 @@ AI-Engineer-Journey/
 ├── Day-029/
 ├── Day-030/
 ├── Day-031/
+├── Day-032/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -140,8 +142,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **31 / 200**
-- 🟩 GitHub Streak: **31 Days**
+- 📅 Day: **32 / 200**
+- 🟩 GitHub Streak: **32 Days**
 - 💻 Projects Built: **3**
 - 📚 Major Topics Covered:
   - Pandas

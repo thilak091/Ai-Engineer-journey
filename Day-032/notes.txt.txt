@@ -1,0 +1,18 @@
+Day - 32
+model.get_params()
+returns all the tuning parameters of a model.
+dtc.feature_importances_
+attribute of a decision tree that returns the array of the importance of each feature in a scale of 0-1.
+Decision Tree Classifier & Parameters:
+-> Criterion => 'entropy' or 'gini'
+-> ccp_alpha => a value between 0-1
+recommended close to zero (0.04)
+↓
+helps reduce overfitting
+-> max_depth=> how many times it can split
+Low -> underfitting
+high/None -> Overfitting
+-> min_samples_split=> min number of observations required to split
+└> high -> simple tree so prevents overfitting
+-> min_samples_leaf => min number of observations present in a leaf node after a split
+└> high => smooth out the model and stops outliers.
