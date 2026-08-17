@@ -1,0 +1,13 @@
+Day-33
+Bagging:-
+(BootStrap aggregating)
+splitting into random data like n datas, feeding it to N decision trees and combines to give a full prediction.
+Difference Between Bagging and Random forest
+Bagging gives all features no matter the split
+Random forest gives random features at every split.
+Random forest in Scikit Learn
+-> from sklearn.ensemble import RandomForestClassifier
+and RandomForestRegressor
+parameters of Random forest
+n_estimators = ---> no of trees inforest
+max_features = ---> no features considered at each split.

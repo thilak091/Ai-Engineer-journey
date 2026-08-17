@@ -60,6 +60,7 @@ Over the next 200 days, I aim to:
 | 030 | ML Student Placement Predictor (Project) | ✅ |
 | 031 | Decision Trees and Classification  | ✅ |
 | 032 | Random Forest Classification and Tuning it  | ✅ |
+| 033 | Entrooy , Ginni Impurity & Information Gain  | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -99,6 +100,7 @@ AI-Engineer-Journey/
 ├── Day-030/
 ├── Day-031/
 ├── Day-032/
+├── Day-033/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -142,8 +144,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **32 / 200**
-- 🟩 GitHub Streak: **32 Days**
+- 📅 Day: **33 / 200**
+- 🟩 GitHub Streak: **33 Days**
 - 💻 Projects Built: **3**
 - 📚 Major Topics Covered:
   - Pandas
