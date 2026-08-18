@@ -61,6 +61,7 @@ Over the next 200 days, I aim to:
 | 031 | Decision Trees and Classification  | ✅ |
 | 032 | Random Forest Classification and Tuning it  | ✅ |
 | 033 | Entrooy , Ginni Impurity & Information Gain  | ✅ |
+| 034 | Gradient Boosting and Classification  | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -101,6 +102,7 @@ AI-Engineer-Journey/
 ├── Day-031/
 ├── Day-032/
 ├── Day-033/
+├── Day-034/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -144,8 +146,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **33 / 200**
-- 🟩 GitHub Streak: **33 Days**
+- 📅 Day: **34 / 200**
+- 🟩 GitHub Streak: **34 Days**
 - 💻 Projects Built: **3**
 - 📚 Major Topics Covered:
   - Pandas

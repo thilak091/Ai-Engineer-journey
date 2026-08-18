@@ -1,0 +1,10 @@
+Day-34
+Boosting:-
+Same as bagging but each consecutive tree is made by the results and covered mistakes of the last tree making it better
+to import:-
+From sklearn.ensemble import GradientBoostingClassifier
+Parameters of GBC
+n_estimators => no of Trees
+learning_rate -> rate of which the next tree learns from previous Tree (0, 1)
+max_depth => same as RF
+Remaining Same as RF
