@@ -43,12 +43,12 @@ Over the next 200 days, I aim to:
 | 013 | Mini Project on Advanced Numpy | ✅ |
 | 014 | Flattening, Viewing & Copying | ✅ |
 | 015 | Ai_Training_DataSet_Analyzer (Numpy Completed) | ✅ |
-| 016 | Matplotlib Basics and line Graphs | ✅ |
-| 017 | Barcharts and Histograms | ✅ |
-| 018 | PieCharts, StackPlots and Filling | ✅ |
-| 019 | Scatter Plots and its Uses | ✅ |
-| 020 | Plotting Time Data And Live Data | ✅ |
-| 021 | SubPlots , Figures and Axis' | ✅ |
+| 016 | Matplotlib Basics & line Graphs | ✅ |
+| 017 | Barcharts & Histograms | ✅ |
+| 018 | PieCharts, StackPlots & Filling | ✅ |
+| 019 | Scatter Plots & its Uses | ✅ |
+| 020 | Plotting Time Data & Live Data | ✅ |
+| 021 | SubPlots , Figures & Axis' | ✅ |
 | 022 | Job Statistics DashBoard (MatPlotLib Completed) | ✅ |
 | 023 | Integration Project Done | ✅ |
 | 024 | Fundamentals of Machine Learning | ✅ |
@@ -58,10 +58,11 @@ Over the next 200 days, I aim to:
 | 028 | Evaluating Classifier Models , Confusion Matrix etc | ✅ |
 | 029 | OneHotEncoder , Column Transformer & Pipelines | ✅ |
 | 030 | ML Student Placement Predictor (Project) | ✅ |
-| 031 | Decision Trees and Classification  | ✅ |
-| 032 | Random Forest Classification and Tuning it  | ✅ |
+| 031 | Decision Trees & Classification  | ✅ |
+| 032 | Random Forest Classification & Tuning it  | ✅ |
 | 033 | Entrooy , Ginni Impurity & Information Gain  | ✅ |
-| 034 | Gradient Boosting and Classification  | ✅ |
+| 034 | Gradient Boosting & Classification  | ✅ |
+| 035 | Support Vector Machines & Classification  | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -103,6 +104,7 @@ AI-Engineer-Journey/
 ├── Day-032/
 ├── Day-033/
 ├── Day-034/
+├── Day-035/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -146,8 +148,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **34 / 200**
-- 🟩 GitHub Streak: **34 Days**
+- 📅 Day: **35 / 200**
+- 🟩 GitHub Streak: **35 Days**
 - 💻 Projects Built: **3**
 - 📚 Major Topics Covered:
   - Pandas

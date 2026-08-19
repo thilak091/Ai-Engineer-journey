@@ -1,0 +1,75 @@
+Day - 35
+Support Vector Machine
+
+Hyper Plane
+It's a line that seperates our data into its categories, in 3Dimension it becomes a plane
+Data that follows the Hyperplane falls in one category and that doesn't will fall into other categories.
+
+Maximal Margin Classifier:- (only for perfectly seperatable data)
+It's a hyperplane that maximizes the distance from itself to the nearest datapoints
+
+-> points close to the margin (or) on the margin are called Support Vectors
+
+Support Vector Classifier / Soft Margin Classifier:-
+when the data is not perfectly seperatable, we use SVC / SMC. This allows some points to violate the margin.
+
+Slack variable
+0 if obs is in correct side of margin
+
+> 0 if it is in the wrong side of the margin (violating margin).
+> 1 if it is in the wrong side of the hyper plane
+
+tuning parameter for errors allowed
+C aka regularistation
+(more curvy) -> small mean less violations / narrow margins
+(more straight) -> Large mans more violations allowed / wider margins
+
+for Non Linear Bondaries:-
+using kernels:-
+allow to extend the dimensions of the data and go beyond the boundaries. (like z axis)
+
+types
+-> Linear kernel
+-> Polynomial kernel
+-> Radial kernel (circular)
+
+in Scikit Learn
+from sklearn.svm import SVC
+SVC = SVC()
+
+parameters of SVC
+C -> regularisation -> less, lower violations
+-> more, higher violations allowed (more generalised).
+
+gamma -> represents complexity by checking no of points near the hyperplane/margin
+< 0.01 (prone to Underfit)
+
+> 1 (prone to Overfit)
+> (0.1 to 1) good
+> (or)
+> use 'scale' or 'auto'
+
+Kernel -> Kernels, used for non linear boundaries
+'linear' linear
+'rbf' radial
+'poly' polynomial
+
+degree -> only used with kernel='poly'
+allows to set the highest degree of polynomial boundry
+
+probability -> decides whether we can use predict_proba() method to find predicting probability.
+
+Attributes of an SVC model (after training)
+
+svc.support_vectors_
+array of the feature data of the support vectors (vectors closest to / violating margin).
+helps understanding what causes them to be so close/violate.
+
+svc.support_
+a 1D array of indices pointing back to the rows of your training data (X, or df).
+It lets us map the model's support vectors directly back to our original dataset rows.
+
+svc.n_support_
+A list/Array containing how many support vectors came from each class label
+
+Helps us identify if one class has significantly more influence or if the support vectors are
