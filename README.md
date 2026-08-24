@@ -63,6 +63,7 @@ Over the next 200 days, I aim to:
 | 033 | Entrooy , Ginni Impurity & Information Gain  | ✅ |
 | 034 | Gradient Boosting & Classification  | ✅ |
 | 035 | Support Vector Machines & Classification  | ✅ |
+| 036 | Support Vector Classifier and Parameters | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -105,6 +106,7 @@ AI-Engineer-Journey/
 ├── Day-033/
 ├── Day-034/
 ├── Day-035/
+├── Day-036/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -148,8 +150,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **35 / 200**
-- 🟩 GitHub Streak: **35 Days**
+- 📅 Day: **36 / 200**
+- 🟩 GitHub Streak: **36 Days**
 - 💻 Projects Built: **3**
 - 📚 Major Topics Covered:
   - Pandas
