@@ -1,0 +1,13 @@
+day - 37
+Naive Bayes:
+Naive Bayes is a mathematical/probability wise classifying algorithm that uses prior probability of testing data and conditional probability to give a score and predicts on which has the greater score.
+Importing:-
+from sklearn.naive_bayes import GaussianNB
+gnb = GaussianNB()
+parameters:-
+var_smoothing
+Prior probability:-
+The initial probability of the assumption.
+Likelihood:-
+The conditional probability of any given feature
+ex: p ('Dear' / Not Spam)

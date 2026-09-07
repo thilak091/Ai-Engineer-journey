@@ -64,6 +64,7 @@ Over the next 200 days, I aim to:
 | 034 | Gradient Boosting & Classification  | ✅ |
 | 035 | Support Vector Machines & Classification  | ✅ |
 | 036 | Support Vector Classifier and Parameters | ✅ |
+| 037 | Naive Bayes and GaussianNB | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -107,6 +108,7 @@ AI-Engineer-Journey/
 ├── Day-034/
 ├── Day-035/
 ├── Day-036/
+├── Day-037/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -150,7 +152,7 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **36 / 200**
+- 📅 Day: **37 / 200**
 - 🟩 GitHub Streak: **36 Days**
 - 💻 Projects Built: **3**
 - 📚 Major Topics Covered:
