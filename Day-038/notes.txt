@@ -1,0 +1,34 @@
+Day - 038
+Text Classification
+It is a machine learning technique
+that assigns pre-defined categories or labels
+to open-ended text based on its content.
+Why ML Models Cannot Directly Understand
+Raw Text
+Machine Learning models cannot directly
+understand raw text because they are
+built on mathematical formulas and
+statistical algorithms, which only operate
+on numbers.
+Document -> a single text file / item / article
+Corpus -> A large collection or dataset of
+multiple documents
+combined together
+Token -> An individual piece of text split
+up from a document, usually
+a single word or punctuation mark
+Vocabulary -> The list of unique tokens found
+accross the entire corpus
+080 - NLP
+In Scikit Learn, we can use feature extraction text
+modules vectorizers to vectorize data
+(syntax: from sklearn.feature extraction.text import CountVectorizer,
+TfidfVectorizer)
+count_vect = CountVectorizer()
+count_vect.fit_transform(msg_list)
+-> returns a sparse matrix of
+all the tokens (words)
+in the list
+count_vect.get_feature_names()
+-> all the name of words present
+in the message.

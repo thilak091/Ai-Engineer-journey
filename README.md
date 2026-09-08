@@ -63,8 +63,9 @@ Over the next 200 days, I aim to:
 | 033 | Entrooy , Ginni Impurity & Information Gain  | ✅ |
 | 034 | Gradient Boosting & Classification  | ✅ |
 | 035 | Support Vector Machines & Classification  | ✅ |
-| 036 | Support Vector Classifier and Parameters | ✅ |
-| 037 | Naive Bayes and GaussianNB | ✅ |
+| 036 | Support Vector Classifier & Parameters | ✅ |
+| 037 | Naive Bayes & GaussianNB | ✅ |
+| 038 | Count & Tfidf Vectorizers | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -109,6 +110,7 @@ AI-Engineer-Journey/
 ├── Day-035/
 ├── Day-036/
 ├── Day-037/
+├── Day-038/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -152,8 +154,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **37 / 200**
-- 🟩 GitHub Streak: **36 Days**
+- 📅 Day: **38 / 200**
+- 🟩 GitHub Streak: **38 Days**
 - 💻 Projects Built: **3**
 - 📚 Major Topics Covered:
   - Pandas
