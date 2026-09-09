@@ -1,0 +1,23 @@
+Day - 39
+Text Classification Pipeline
+Text
+↓
+Vectorization
+↓
+Numeric feature Matrix -> ↓
+Train Test split
+↓
+ML Model
+↓
+Prediction
+↓
+Evaluation
+The feature matrix is used as the data and we need to give the target and use ML Models to train and predict.
+Best ML Models to use for Text
+-> Logistic Regression
+-> Multinomial NB
+Gaussian NB is generally used for (continuous) Numeric values. best for physical measurements, numerics, etc
+MultiNomial NB is mainly used for Count values or frequencies. best used for Text classification.
+to transform your data based on your already fit data
+use tfid.transform( _ ) ✓
+not tfid.fit_transform( ) again X

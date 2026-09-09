@@ -66,6 +66,7 @@ Over the next 200 days, I aim to:
 | 036 | Support Vector Classifier & Parameters | ✅ |
 | 037 | Naive Bayes & GaussianNB | ✅ |
 | 038 | Count & Tfidf Vectorizers | ✅ |
+| 039 | Text Classification Pipeline | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -111,6 +112,7 @@ AI-Engineer-Journey/
 ├── Day-036/
 ├── Day-037/
 ├── Day-038/
+├── Day-039/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -154,8 +156,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **38 / 200**
-- 🟩 GitHub Streak: **38 Days**
+- 📅 Day: **39 / 200**
+- 🟩 GitHub Streak: **39 Days**
 - 💻 Projects Built: **3**
 - 📚 Major Topics Covered:
   - Pandas
