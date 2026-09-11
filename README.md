@@ -67,6 +67,7 @@ Over the next 200 days, I aim to:
 | 037 | Naive Bayes & GaussianNB | ✅ |
 | 038 | Count & Tfidf Vectorizers | ✅ |
 | 039 | Text Classification Pipeline | ✅ |
+| 040 | Ai Spam Message Detector(Project) | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -113,6 +114,7 @@ AI-Engineer-Journey/
 ├── Day-037/
 ├── Day-038/
 ├── Day-039/
+├── Day-040/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -156,9 +158,9 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **39 / 200**
-- 🟩 GitHub Streak: **39 Days**
-- 💻 Projects Built: **3**
+- 📅 Day: **40 / 200**
+- 🟩 GitHub Streak: **40 Days**
+- 💻 Projects Built: **4**
 - 📚 Major Topics Covered:
   - Pandas
   - NumPy
