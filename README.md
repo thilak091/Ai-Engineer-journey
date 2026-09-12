@@ -68,6 +68,7 @@ Over the next 200 days, I aim to:
 | 038 | Count & Tfidf Vectorizers | ✅ |
 | 039 | Text Classification Pipeline | ✅ |
 | 040 | Ai Spam Message Detector(Project) | ✅ |
+| 041 | SimpleImputer & Data PreProcessing | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -115,6 +116,7 @@ AI-Engineer-Journey/
 ├── Day-038/
 ├── Day-039/
 ├── Day-040/
+├── Day-041/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -158,8 +160,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **40 / 200**
-- 🟩 GitHub Streak: **40 Days**
+- 📅 Day: **41 / 200**
+- 🟩 GitHub Streak: **41 Days**
 - 💻 Projects Built: **4**
 - 📚 Major Topics Covered:
   - Pandas

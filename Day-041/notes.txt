@@ -1,0 +1,25 @@
+Day - 41
+Easy way to fill missing values:-
+Using SimpleImputer
+we can fill mean, median, etc for null values
+ex:-
+from sklearn.impute import SimpleImputer
+imp_mean = SimpleImputer(strategy = 'mean')
+imp_mean.fit_transform(df)
+df -> df with missing values
+gives an array
+strategy =
+'mean'
+'median'
+'constant', fill_value = val
+Best workflow to prevent Data Leakage
+Data set
+↓
+Train-Test-Split
+↓
+Fit preprocessing on Train (Impute)
+↓
+Transform Train and Test (fill both with Train imputed values)
+to make multiple transformation to same set of columns in Col Transformer
+make a smaller pipeline ex: pipeline(Imputer, StandardScaler)
+then feed it to Column Transformer.
