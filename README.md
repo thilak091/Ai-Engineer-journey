@@ -70,6 +70,7 @@ Over the next 200 days, I aim to:
 | 040 | Ai Spam Message Detector(Project) | ✅ |
 | 041 | SimpleImputer & Data PreProcessing | ✅ |
 | 042 | Feature Engineering & Binning | ✅ |
+| 043 | Feature Selection, SelectKBest & RFE | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -119,6 +120,7 @@ AI-Engineer-Journey/
 ├── Day-040/
 ├── Day-041/
 ├── Day-042/
+├── Day-043/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -162,8 +164,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **42 / 200**
-- 🟩 GitHub Streak: **42 Days**
+- 📅 Day: **43 / 200**
+- 🟩 GitHub Streak: **43 Days**
 - 💻 Projects Built: **4**
 - 📚 Major Topics Covered:
   - Pandas

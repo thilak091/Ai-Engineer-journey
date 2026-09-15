@@ -1,0 +1,23 @@
+Day - 42
+Feature Engineering
+Binning:
+Bining is the process of converting continuous numerical data into smaller, discrete categories or "buckets" (bins).
+pd.cut (val, bins = , labels = )
+This method is used to convert values to binned data.
+label = [list of groups]
+ex 'high', 'med', 'low'
+bins = [boundarie of groups]
+ex: [0, 7, 8.5, 10]
+'label 1' 'label 2' 'label 3'
+Polynomial features:
+it creates new columns in our dataframe by squaring cubing or multiplying existing columns together
+if degree = 2
+1 column x -> 2 and x^2
+2 column x, y -> x, y, x^2, y^2, xy
+5 cols
+helps for spotting hidden data relations.
+ex code:
+from sklearn.preprocessing import PolynomialFeatures
+poly = PolynomialFeatures(degree = 2, include_bias = False)
+-> we dont need indicator
+new_df = poly.fit_transform(df)
