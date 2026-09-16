@@ -71,6 +71,7 @@ Over the next 200 days, I aim to:
 | 041 | SimpleImputer & Data PreProcessing | ✅ |
 | 042 | Feature Engineering & Binning | ✅ |
 | 043 | Feature Selection, SelectKBest & RFE | ✅ |
+| 043 | Class Imbalance, Stratified Splits & Class Weights  | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -121,6 +122,7 @@ AI-Engineer-Journey/
 ├── Day-041/
 ├── Day-042/
 ├── Day-043/
+├── Day-044/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -164,8 +166,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **43 / 200**
-- 🟩 GitHub Streak: **43 Days**
+- 📅 Day: **44 / 200**
+- 🟩 GitHub Streak: **44 Days**
 - 💻 Projects Built: **4**
 - 📚 Major Topics Covered:
   - Pandas

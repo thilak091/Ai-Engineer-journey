@@ -1,0 +1,112 @@
+#Challenge 1
+from sklearn.dummy import DummyClassifier
+from sklearn.model_selection import train_test_split
+from sklearn import metrics
+
+X = [[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]]
+y = [0,0,0,0,0,0,0,0,1,1]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)#, stratify=y)
+dummy=DummyClassifier(strategy='most_frequent')
+
+dummy.fit(X_train, y_train)
+
+#train_pred = dummy.predict(X_train)
+y_pred = dummy.predict(X_test)
+
+print('Accuracy Score:', metrics.accuracy_score(y_test, y_pred))
+print('Classification Report')
+print(metrics.classification_report(y_test, y_pred))
+
+#Challenge 2
+from sklearn.datasets import make_classification
+import numpy as np
+X, y = make_classification(
+    n_samples=1000,
+    n_features=5,
+    n_informative=3,
+    n_redundant=0,
+    weights=[0.90, 0.10],
+    random_state=42
+)
+zero, ones =np.bincount(y)
+print(f'Class Zero Percent: {zero/10:.2f}%')
+print(f'Class Ones Percent: {ones/10:.2f}%')
+
+#Challenge 3
+from sklearn.linear_model import LogisticRegression
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)
+
+#Model A (without weights)
+logreg_nw = LogisticRegression()
+logreg_nw.fit(X_train, y_train)
+y_pred1= logreg_nw.predict(X_test)
+
+print('Model A (without weights)')
+print('Accuracy Score:', metrics.accuracy_score(y_test, y_pred1))
+print('Classification Report')
+print(metrics.classification_report(y_test, y_pred1))
+
+#Model B (with class weights as balanced)
+logreg_ww = LogisticRegression(class_weight='balanced')
+logreg_ww.fit(X_train, y_train)
+y_pred2= logreg_ww.predict(X_test)
+
+print('Model B (with class weights as balanced)')
+print('Accuracy Score:', metrics.accuracy_score(y_test, y_pred2))
+print('Classification Report')
+print(metrics.classification_report(y_test, y_pred2))
+
+'''
+i can see that the recall of the model for the minority have imnproved in model b
+this is because of the weight shifts no that it predicts more of the 1 present in the data set out of all the 1's,
+but the precision of the minority class decreased significantly because now it also spamming more 1 and out of all the
+predicted 1s some of them are zeros
+
+i can also see the recall of the majority class have decreased , i think this is also because of the weight shifts so that its not
+spamming 0 anymore and trying to actually predict the values'''
+
+#Challenge 4
+X_train, X_test, y_train, y_test= train_test_split(
+    X, y,
+    test_size=0.2,
+    random_state=42
+)
+print(np.bincount(y_test))
+
+X_train, X_test, y_train, y_test=train_test_split(
+    X, y,
+    test_size=0.2,
+    random_state=42,
+    stratify=y
+)
+print(np.bincount(y_test))# i can see that this gives me the test thing as the same ratio of the class weights that is arount 9:1 ofd 0 and 1
+
+#Challenge 5
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import StratifiedKFold
+from sklearn.pipeline import make_pipeline
+
+logreg = LogisticRegression(class_weight='balanced')
+pipe = make_pipeline(StandardScaler(), logreg)
+
+skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=3)
+f1, precision, recall = [], [], []
+acc = []
+for fold, (train_index, test_index) in enumerate(skf.split(X, y)):\
+    X_train, X_test = X[train_index], X[test_index]
+    y_train, y_test = y[train_index], y[test_index]
+
+    pipe.fit(X_train, y_train)
+    y_pred = pipe.predict(X_test)
+
+    acc.append(metrics.accuracy_score(y_test, y_pred))
+    f1.append(metrics.f1_score(y_test, y_pred))
+    precision.append(metrics.precision_score(y_test, y_pred))
+    recall.append(metrics.recall_score(y_test, y_pred))
+
+print("Mean Accuracy :", np.mean(acc))
+print("Mean Precision:", np.mean(precision))
+print("Mean Recall   :", np.mean(recall))
+print("Mean F1       :", np.mean(f1))
