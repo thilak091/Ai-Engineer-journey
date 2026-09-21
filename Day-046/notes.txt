@@ -1,0 +1,16 @@
+Day - 46
+Unsupervised Learning
+The learning process in which the data has no targets. i.e. the models tries to discover structure/patterns in the data itself.
+K-Means Clustering
+It tries to group similar observations together by forming k centroids and assigning each observation a centroid group based on data.
+k -> number of clusters
+centroid -> center of a cluster
+cluster -> group of similar observation
+Inertia -> how tightly points are grouped around their centroid.
+code
+from sklearn.cluster import KMeans
+kmeans = KMeans(n_clusters = 3, random_state = 42, n_init = 10)
+labels = kmeans.fit_predict(x)
+print(kmeans.cluster_centers_)
+print(kmeans.inertia_)
+It is important to use Standard Scaler.

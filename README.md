@@ -73,6 +73,7 @@ Over the next 200 days, I aim to:
 | 043 | Feature Selection, SelectKBest & RFE | ✅ |
 | 044 | Class Imbalance, Stratified Splits & Class Weights  | ✅ |
 | 045 | Threshold Probabilities & their Relations  | ✅ |
+| 046 | UnSupervised Learning & KMeans Clustering  | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -125,6 +126,7 @@ AI-Engineer-Journey/
 ├── Day-043/
 ├── Day-044/
 ├── Day-045/
+├── Day-046/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -168,8 +170,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **45 / 200**
-- 🟩 GitHub Streak: **45 Days**
+- 📅 Day: **46 / 200**
+- 🟩 GitHub Streak: **46 Days**
 - 💻 Projects Built: **4**
 - 📚 Major Topics Covered:
   - Pandas
