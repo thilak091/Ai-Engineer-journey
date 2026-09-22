@@ -74,6 +74,7 @@ Over the next 200 days, I aim to:
 | 044 | Class Imbalance, Stratified Splits & Class Weights  | ✅ |
 | 045 | Threshold Probabilities & their Relations  | ✅ |
 | 046 | UnSupervised Learning & KMeans Clustering  | ✅ |
+| 047 | DBSCANS  &  Clustering  | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -127,6 +128,7 @@ AI-Engineer-Journey/
 ├── Day-044/
 ├── Day-045/
 ├── Day-046/
+├── Day-047/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -170,8 +172,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **46 / 200**
-- 🟩 GitHub Streak: **46 Days**
+- 📅 Day: **47 / 200**
+- 🟩 GitHub Streak: **47 Days**
 - 💻 Projects Built: **4**
 - 📚 Major Topics Covered:
   - Pandas

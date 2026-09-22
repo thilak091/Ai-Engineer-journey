@@ -1,0 +1,35 @@
+LG
+
+Day-47
+
+Density Based Spatial Clustering of Application with noise
+
+DV DBSCANS
+
+groups data by i dontitysng continuous high density areas seperated regions of low density.
+
+Unlike K-Means, it doesn't al clusters ban it doen asumato spherical irregular shapes and noise point automatically
+
+Cove points (Anchors) Parametes Contains atleast min-samples within its d-distance neighbourhood.
+
+Bordes Point
+
+Contains less samples than min samples
+
+Noise Point
+
+Neither Love nor near to any core Coder
+
+from sklearn-cluster import DBSCAN
+
+2b= DBSCAN ( eps = eps, min-samples=15)
+
+> epsilon = distance
+
+db.fit (x)
+
+vecomended = 0.2-0.3
+
+db-labels-
+
+db. core-sample-indices-
