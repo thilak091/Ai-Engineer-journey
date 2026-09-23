@@ -1,0 +1,13 @@
+Day - 48
+PCA (Principal Component Analysis).
+An Unsupervised ML technique used to compress datasets by reducing their dimensions while preserving as much of the original information as possible
+Variance = information (highly towards a group)
+new columns != original columns
+PCA creates new colums out of original data
+Scaling is important for PCA //
+from sklearn.decomposition import PCA
+pca = PCA (n_components = 2)
+x_reduced = PCA.fit_transform(x_scaled)
+print(pca.explained_variance_ratio_)
+print(pca.components_)
+variance ratio = information percentage of a column

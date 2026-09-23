@@ -71,10 +71,11 @@ Over the next 200 days, I aim to:
 | 041 | SimpleImputer & Data PreProcessing | ✅ |
 | 042 | Feature Engineering & Binning | ✅ |
 | 043 | Feature Selection, SelectKBest & RFE | ✅ |
-| 044 | Class Imbalance, Stratified Splits & Class Weights  | ✅ |
-| 045 | Threshold Probabilities & their Relations  | ✅ |
-| 046 | UnSupervised Learning & KMeans Clustering  | ✅ |
+| 044 | Class Imbalance, Stratified Splits & Class Weights | ✅ |
+| 045 | Threshold Probabilities & their Relations | ✅ |
+| 046 | UnSupervised Learning & KMeans Clustering | ✅ |
 | 047 | DBSCANS  &  Clustering  | ✅ |
+| 048 | Principal Component Analysis & Decomposition | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -129,6 +130,7 @@ AI-Engineer-Journey/
 ├── Day-045/
 ├── Day-046/
 ├── Day-047/
+├── Day-048/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -172,8 +174,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **47 / 200**
-- 🟩 GitHub Streak: **47 Days**
+- 📅 Day: **48 / 200**
+- 🟩 GitHub Streak: **48 Days**
 - 💻 Projects Built: **4**
 - 📚 Major Topics Covered:
   - Pandas
