@@ -76,6 +76,7 @@ Over the next 200 days, I aim to:
 | 046 | UnSupervised Learning & KMeans Clustering | ✅ |
 | 047 | DBSCANS  &  Clustering  | ✅ |
 | 048 | Principal Component Analysis & Decomposition | ✅ |
+| 049 | PCA Practice and Pipeline Making | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -131,6 +132,7 @@ AI-Engineer-Journey/
 ├── Day-046/
 ├── Day-047/
 ├── Day-048/
+├── Day-049/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -174,8 +176,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **48 / 200**
-- 🟩 GitHub Streak: **48 Days**
+- 📅 Day: **49 / 200**
+- 🟩 GitHub Streak: **49 Days**
 - 💻 Projects Built: **4**
 - 📚 Major Topics Covered:
   - Pandas
