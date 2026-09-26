@@ -77,6 +77,8 @@ Over the next 200 days, I aim to:
 | 047 | DBSCANS  &  Clustering  | ✅ |
 | 048 | Principal Component Analysis & Decomposition | ✅ |
 | 049 | PCA Practice and Pipeline Making | ✅ |
+| 050 | Project 5 Starting Day | ✅ |
+| 051 | Project 5 Finishing and Polishing Day | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -133,6 +135,8 @@ AI-Engineer-Journey/
 ├── Day-047/
 ├── Day-048/
 ├── Day-049/
+├── Day-050/
+├── Day-051/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -176,9 +180,9 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **49 / 200**
-- 🟩 GitHub Streak: **49 Days**
-- 💻 Projects Built: **4**
+- 📅 Day: **51 / 200**
+- 🟩 GitHub Streak: **51 Days**
+- 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas
   - NumPy
