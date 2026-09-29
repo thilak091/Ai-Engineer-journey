@@ -1,0 +1,18 @@
+Day - 52
+Model Persistance
+It means saving the model with all the fit
+ data to load and use it later without needing to 
+ training it again.
+joblib Library:-
+It is the Industrial Standard Library to use to store a
+ model and load a stored model.
+
+models are stored as .pkl files.
+
+joblib.dump(model, location)
+
+dumps the fitted model/pipeline in the given
+ location and filename.
+ 
+joblib.load(file)
+load the file of the model in the program.

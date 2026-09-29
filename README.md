@@ -79,6 +79,7 @@ Over the next 200 days, I aim to:
 | 049 | PCA Practice and Pipeline Making | ✅ |
 | 050 | Project 5 Starting Day | ✅ |
 | 051 | Project 5 Finishing and Polishing Day | ✅ |
+| 051 | Model Persistance and Inference | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -137,6 +138,7 @@ AI-Engineer-Journey/
 ├── Day-049/
 ├── Day-050/
 ├── Day-051/
+├── Day-052/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -180,8 +182,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **51 / 200**
-- 🟩 GitHub Streak: **51 Days**
+- 📅 Day: **52 / 200**
+- 🟩 GitHub Streak: **52 Days**
 - 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas
