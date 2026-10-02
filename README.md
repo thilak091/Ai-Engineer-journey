@@ -79,7 +79,8 @@ Over the next 200 days, I aim to:
 | 049 | PCA Practice and Pipeline Making | ✅ |
 | 050 | Project 5 Starting Day | ✅ |
 | 051 | Project 5 Finishing and Polishing Day | ✅ |
-| 051 | Model Persistance and Inference | ✅ |
+| 052 | Model Persistance and Inference | ✅ |
+| 053 | Scenario Based Recall Vs Precision Trade off | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -139,6 +140,7 @@ AI-Engineer-Journey/
 ├── Day-050/
 ├── Day-051/
 ├── Day-052/
+├── Day-053/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -182,8 +184,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **52 / 200**
-- 🟩 GitHub Streak: **52 Days**
+- 📅 Day: **53 / 200**
+- 🟩 GitHub Streak: **53 Days**
 - 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas
