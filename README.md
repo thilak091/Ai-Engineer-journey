@@ -76,11 +76,12 @@ Over the next 200 days, I aim to:
 | 046 | UnSupervised Learning & KMeans Clustering | ✅ |
 | 047 | DBSCANS  &  Clustering  | ✅ |
 | 048 | Principal Component Analysis & Decomposition | ✅ |
-| 049 | PCA Practice and Pipeline Making | ✅ |
+| 049 | PCA Practice & Pipeline Making | ✅ |
 | 050 | Project 5 Starting Day | ✅ |
-| 051 | Project 5 Finishing and Polishing Day | ✅ |
-| 052 | Model Persistance and Inference | ✅ |
+| 051 | Project 5 Finishing & Polishing Day | ✅ |
+| 052 | Model Persistance & Inference | ✅ |
 | 053 | Scenario Based Recall Vs Precision Trade off | ✅ |
+| 054 | deployment Basics & Fast API Basics | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -141,6 +142,7 @@ AI-Engineer-Journey/
 ├── Day-051/
 ├── Day-052/
 ├── Day-053/
+├── Day-054/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -184,8 +186,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **53 / 200**
-- 🟩 GitHub Streak: **53 Days**
+- 📅 Day: **54 / 200**
+- 🟩 GitHub Streak: **54 Days**
 - 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas

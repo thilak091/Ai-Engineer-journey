@@ -1,0 +1,23 @@
+Day - 54
+Deployment
+hosting our model / service so that
+anyone can use it.
+API
+Application Programming Interface
+GET (Retrieving Information)
+POST (Sending Data)
+code:
+from fastapi import FastAPI
+app = FastAPI()
+@app.get("/") # like home screen
+def home(): # this fn is called
+return {"status": "running"} # returned this
+dict in the
+form of JSON
+from pydantic import BaseModel
+class form(BaseModel):
+name: str # defining datatypes
+marks: int # to avoid crashes
+@app.post("/form")
+def fill-form(student: form)
+return {"status": "form filled"}
