@@ -82,6 +82,7 @@ Over the next 200 days, I aim to:
 | 052 | Model Persistance & Inference | ✅ |
 | 053 | Scenario Based Recall Vs Precision Trade off | ✅ |
 | 054 | deployment Basics & Fast API Basics | ✅ |
+| 055 | Transaction Fraud Detection and Inference(ML Completed) | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -143,6 +144,7 @@ AI-Engineer-Journey/
 ├── Day-052/
 ├── Day-053/
 ├── Day-054/
+├── Day-055/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -186,8 +188,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **54 / 200**
-- 🟩 GitHub Streak: **54 Days**
+- 📅 Day: **55 / 200**
+- 🟩 GitHub Streak: **55 Days**
 - 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas
