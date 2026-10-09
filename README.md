@@ -83,6 +83,7 @@ Over the next 200 days, I aim to:
 | 053 | Scenario Based Recall Vs Precision Trade off | ✅ |
 | 054 | deployment Basics & Fast API Basics | ✅ |
 | 055 | Transaction Fraud Detection and Inference(ML Completed) | ✅ |
+| 056 | Introduction to DeepLearning with PyTorch | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -145,6 +146,7 @@ AI-Engineer-Journey/
 ├── Day-053/
 ├── Day-054/
 ├── Day-055/
+├── Day-056/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -188,14 +190,15 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **55 / 200**
-- 🟩 GitHub Streak: **55 Days**
+- 📅 Day: **56 / 200**
+- 🟩 GitHub Streak: **56 Days**
 - 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas
   - NumPy
   - Matplotlib
   - Scikit-Learn
+  - PyTorch
   
 
 ---

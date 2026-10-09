@@ -1,0 +1,62 @@
+
+
+Pytorch
+Day - 56
+pytorch is an opensource Deep learning frame work built on Python.
+Tensor
+Tensor is the fundamental data structure in Pytorch.
+It is like a multidimensional array that can live and compute on GPU instead of just a CPU.
+torch.empty()
+It is used to create an empty tensor (random or garbage value)
+ex:
+a = torch.empty(2,2) #sizes as args.
+torch.rand()
+It is used to create a tensor with random values.
+torch.zeros()
+It is used to create a tensor with Zeros
+torch.ones()
+It is used to create a tensor with ones.
+
+
+
+dtype=
+is used to define datatype
+torch.tensor(data)
+used to create tensor of data.
+we can perform addition/subtraction/multiply with tensors like arrays.
+to do inplace we use underscore fun.
+y.add_(x) # x is added to y
+z = add(x,y) # z=x+y
+Slicing
+Same as array.
+to reshape a tensor
+we x.view(size) and assign it to another tensor
+torch.cuda.is_available()
+Check whether GPU is available in PC
+
+
+
+ex:-
+code
+if torch.cuda.is_available():
+device = torch.device("cuda") #setting device as GPU
+x = torch.ones(5, device=device)
+y = torch.ones(5)
+y = y.to(device)
+Z = x+y #happening on GPU
+requires_grad = True
+informs Pytorch that Gradience is needed to be calculated.
+Gradience Calculation
+it is mainly used to Optimize our models.
+Let say
+y = x+2
+If x has a gradience, the operation above that produces y that is called grad_fn, which is used to track what happened and calculate Gradience
+now
+y.backward() # returns the gradience
+x.grad # returns gradience of x because y -> x.
+
+
+
+but if y is not scalar,
+a vector tensor is needed to be passed in "backward".
+whenever a operation happens, the gradience updates, to avoid this we use x.grad.zero_() to make it remain.
