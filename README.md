@@ -84,6 +84,8 @@ Over the next 200 days, I aim to:
 | 054 | deployment Basics & Fast API Basics | ✅ |
 | 055 | Transaction Fraud Detection and Inference(ML Completed) | ✅ |
 | 056 | Introduction to DeepLearning with PyTorch | ✅ |
+| 057 | Back Propogation and Gradience | ✅ |
+| 058 | Linear Regression and Optimization | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -147,6 +149,8 @@ AI-Engineer-Journey/
 ├── Day-054/
 ├── Day-055/
 ├── Day-056/
+├── Day-057/
+├── Day-058/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -190,8 +194,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **56 / 200**
-- 🟩 GitHub Streak: **56 Days**
+- 📅 Day: **58 / 200**
+- 🟩 GitHub Streak: **58 Days**
 - 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas

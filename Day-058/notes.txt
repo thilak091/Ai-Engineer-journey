@@ -1,0 +1,45 @@
+Day - 58
+Automatic Loss function
+Torch's Neural Network module provides a MSELoss() method to give the loss function
+ex:-
+from torch import nn
+loss = nn.MSELoss()
+training Loop
+for i in iters:
+l = loss(y, y_pred) # calculating loss
+Automatic weights Upgrade (Optimizer)
+torch has optimizer that helps us automatic weight updates
+ex:-
+optimizer = torch.optim.SGD([w], lr=learning_rate)
+[w] -> all params to be updated
+lr -> learning rate
+in Loop
+for i in Loop:
+# loss
+l.backward()
+optimizer.step() # update
+optimizer.zero_grad() # cleaning gradients
+Linear Regression Model
+code:-
+nn.m
+model = nn.Linear(input_size, output_size)
+x = torch.tensor([[1], [2], [3], [4]]) -> 2d array tensor (# 2d tensor)
+y = ' ' ' ' ' ' ' '
+no of rows are samples
+to get predictions
+y_pred = model(x)
+for one item
+y_pred = model(x).item()
+to get optimizer parameters
+optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
+Way Steps to build a Model
+
+Import the Model
+Import the Loss and Optimizer
+Run Training Loop
+forward pass: predictions and loss
+backward pass: gradients
+update weights
+
+
+

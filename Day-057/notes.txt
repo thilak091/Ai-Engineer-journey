@@ -1,0 +1,26 @@
+Page 1:
+Day 57
+Back Propogation
+Computation Graph
+x 
+(f = x.y) -> z
+y /
+we can find local grad for each x and y
+local gradience of x = dz/dx
+"     "     "    y = dz/dy
+Steps to Obtain Loss gradience (ex)
+1, Proceed through all operations aka forward Pass
+2, Calculate the Local Gradients of all the Loss and Parameters
+3, Backward Pass :- use the Chainrule and Local Gradients to find the
+ derivative of Loss wrt to parameters
+In pytorch , for every operation this process is automatically applied 
+and gradience of the last output wrt to the input is returned when x.grad is called.
+Page 2:
+update formula
+wnew = wold - η dL/dw <- Loss gradience
+^
+|
+Learning rate
+Gradient Descent
+Gradient Descent is the process of updating a parameters of a function that supposedly 
+minimizes the loss function of the operation
