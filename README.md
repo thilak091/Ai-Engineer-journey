@@ -86,6 +86,7 @@ Over the next 200 days, I aim to:
 | 056 | Introduction to DeepLearning with PyTorch | ✅ |
 | 057 | Back Propogation and Gradience | ✅ |
 | 058 | Linear Regression and Optimization | ✅ |
+| 059 | Logistic Regression and Optimization | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -151,6 +152,7 @@ AI-Engineer-Journey/
 ├── Day-056/
 ├── Day-057/
 ├── Day-058/
+├── Day-059/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -194,8 +196,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **58 / 200**
-- 🟩 GitHub Streak: **58 Days**
+- 📅 Day: **59 / 200**
+- 🟩 GitHub Streak: **59 Days**
 - 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas
