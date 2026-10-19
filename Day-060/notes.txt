@@ -1,0 +1,6 @@
+Neural Networks:
+
+Neural Networks are inter connected multi layered 
+linear connections transformed to RELU at each interval to convert it into non linear 
+so that it can analyze complex problems and much more complex solutions
+
