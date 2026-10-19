@@ -87,6 +87,7 @@ Over the next 200 days, I aim to:
 | 057 | Back Propogation and Gradience | ✅ |
 | 058 | Linear Regression and Optimization | ✅ |
 | 059 | Logistic Regression and Optimization | ✅ |
+| 060 | Introduction to Neural Network | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -153,6 +154,7 @@ AI-Engineer-Journey/
 ├── Day-057/
 ├── Day-058/
 ├── Day-059/
+├── Day-060/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -196,8 +198,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **59 / 200**
-- 🟩 GitHub Streak: **59 Days**
+- 📅 Day: **60 / 200**
+- 🟩 GitHub Streak: **60 Days**
 - 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas
