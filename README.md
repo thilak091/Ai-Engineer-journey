@@ -88,6 +88,7 @@ Over the next 200 days, I aim to:
 | 058 | Linear Regression and Optimization | ✅ |
 | 059 | Logistic Regression and Optimization | ✅ |
 | 060 | Introduction to Neural Network | ✅ |
+| 061 | Dataset, DataLoader & FeedForward NeuralNetwork | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -155,6 +156,7 @@ AI-Engineer-Journey/
 ├── Day-058/
 ├── Day-059/
 ├── Day-060/
+├── Day-061/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -198,8 +200,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **60 / 200**
-- 🟩 GitHub Streak: **60 Days**
+- 📅 Day: **61 / 200**
+- 🟩 GitHub Streak: **61 Days**
 - 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas

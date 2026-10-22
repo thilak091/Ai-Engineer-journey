@@ -1,0 +1,95 @@
+Day - 61
+epoch:
+forward and backward pass of all training samples
+batch_size
+no of training samples in one forward and backward pass
+number of iterations
+number of passes, each pass using batch_size number of samples
+to import Dataset and dataLoader:-
+from torch.utils.data import Dataset, DataLoader
+to implement a custom dataset in torch
+ex:
+class WineDataset (Dataset): # must inherit
+def init (self): # must implement
+xy = np.loadtxt ("wine.csv", delimiter=',', dtype=np.float32, skiprows=1)
+self.x = torch.from_numpy (xy[:, 1:]) # except header
+self.y = torch.from_numpy (xy[:, [0]]) # 2D
+self.n_samples = xy.shape[0]
+def getitem (self, index):
+return self.x[index], self.y[index]
+def len (self):
+return self.n_samples
+now it can be created, when indexed, getitem is called, when checking length len() is called.
+How to use a DataLoader
+data = WineDataset()
+dataloader = DataLoader (dataset=data, batch_size=4, shuffle=True, num_workers=2)
+# every batch has 4 samples of shuffled data
+dataiter = iter (dataloader) # make it iterable
+data = dataiter.next() -> iterates and gives every batch when called. (now giving first batch)
+features, label = data # unpack
+Now to Loop over DataLoader (training)
+n_iterations = math.ceil (total_samples / batch_size)
+for i in range(epochs): # for looping epochs
+for i, (data, label) in enumerate (dataloader):
+# in the form of (index, (data, label))
+# inner loop will run for all batches in the data Loader.
+Famous Built in Dataset:-
+torchvision.MNIST()
+Importing MNIST Dataset
+import torchvision
+import torchvision.transforms as transforms
+train_dataset = torchvision.datasets.MNIST(
+root = './data', train=True, transform=transforms.ToTensor(), download = True)
+root = where the data is stored (folder) cuz its huge data
+train = True # cuz its training data
+transform = transforms.ToTensor()
+download = True, need to be downloaded to train
+test_dataset = torchvision.datasets.MNIST(
+root = './data', train=False, transform=transforms.ToTensor())
+train_loader = DataLoader (dataset=train_dataset, batch_size=100, shuffle = True)
+test_loader = DataLoader (dataset=test_dataset, batch_size=1000, shuffle: False)
+class NeuralNet(nn.Module):
+def init (self, input_size, hidden_size, num_classes):
+super(NeuralNet, self).init()
+self.l1 = nn.Linear(input_size, hidden_size)
+self.relu = nn.ReLU()
+self.l2 = nn.Linear(hidden_size, num_classes)
+def forward (self, x):
+out = self.l1(x)
+out = self.relu(out)
+out = self.l2(out)
+return out
+model = NeuralNet (input_size, hidden_size, num_classes)
+input_size = 784 (28*28)
+hidden_size = 100
+num_classes = 10 output digits
+loss_fn = nn.CrossEntropyLoss()
+optimizer = torch.optim.Adam (model.parameters(), lr=0.001)
+training loop
+n_iters = len(train_loader)
+for epoch in range(num_epochs):
+for i, (data_image, labels) in enumerate(train_loader):
+data_image = data_image.reshape(-1, 28*28).to('cuda')
+labels = labels.to('cuda')
+# forward pass
+outputs = model(data_image)
+loss = loss_fn(outputs, labels)
+# backward
+optimizer.zero_grad()
+loss.backward()
+optimizer.step()
+if (i+1) % 100 == 0:
+print(...) # viewing
+test
+with torch.no_grad():
+n_correct = 0
+n_samples = 0
+for image, labels in test_loader: # no need of index
+image = image.reshape(-1, 28*28).to('cuda')
+labels = labels.to('cuda')
+outputs = model(images)
+# value, index so unpacking
+_, predictions = torch.max(outputs, 1)
+n_samples += labels.shape[0]
+n_correct += (predictions == labels).sum().item()
+acc = 100 * (num_correct / n_samples)
