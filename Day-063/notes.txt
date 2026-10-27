@@ -1,0 +1,20 @@
+Day - 63
+
+Softmax:-
+Softmax function is used to convert logits to probabilities by exponentially normalizing them.
+
+Cross entropy Loss:-
+it is mainly used for multi class classification and prediction.
+it basically determines loss from OHE ncoded actual label with softmaxed predicted values.
+automatically applied while doing Cross Entropy Loss
+also no OHE manually because it automatically does it
+ex-
+loss = nn. CrossEntropyLoss()
+l_1 = loss(y_pred, y_actual)
+to manually find max among tensor
+use torch.max(tensor) method
+it returns value, index
+so
+_ , predicted_class = torch.max(y_pred, 1)
+^
+dim
