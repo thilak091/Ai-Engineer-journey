@@ -1,0 +1,53 @@
+Day - 64
+Convolutional Neural Networks
+Mainly work on image data and uses convolutional filters to classify images.
+Max pooling
+after an image is filtered through a convolutional layer, a Max pooling layer is applied to down sample the images but still has all the neccessary filtered data put in the image
+avoids over fitting by providing an abstracted form of the sample
+For using the CIFAR10 Dataset
+neccessary imports
+import torchvision
+from torchvision import transforms
+special transform for normalized range
+transform = transforms.Compose(
+[transforms.ToTensor(), transforms.Normalize
+((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
+importing dataset
+train_data = torchvision.datasets.CIFAR10(root = './data', train = True, download = True, transform = transform)
+test_data = torchvision.datasets.CIFAR10(root = './data', train = False, download = True, transform = transform)
+CNN
+Image -> (convo + Relu + pooling) x 2 + Fully Connected Linear Layers for classification
+ex:
+class ConvNet(nn.Module):
+def init(self):
+self.conv1 = nn.Conv2d(3, 6, 5)
+# 3 = input channels, RGB = 3, Grayscale = 1
+# 6 = output to be given, so 6 output features
+# 5 = kernel, image will be split to 5x5
+self.conv2 = nn.Conv2d(6, 16, 5) # same
+self.pool = nn.MaxPool2d(2, 2)
+# 2 = kernel, image will be split to 2x2
+# 2 = stride, how much pixels the next iteration
+self.fc1 = nn.Linear(16 * 5 * 5, 120)
+# cuz, 16 op features of 5*5 downscaled images, so
+# 120 is hidden size
+self.fc2 = nn.Linear(120, 84)
+# both hidden size
+self.fc3 = nn.Linear(84, 10)
+# 10 classes of CIFAR10
+self.relu = nn.ReLU()
+def forward(self, x):
+out1 = self.conv1(x)  }
+out1 = self.relu(out1) } layer 1
+out1 = self.pool(out1) }
+out2 = self.conv2(out1) }
+out2 = self.relu(out2)  } layer 2
+out2 = self.pool(out2)  }
+out2 = out2.view(-1, 16 * 5 * 5)
+# to make it into 1 dim tensor for getting it into the fc Linear Layers
+fc_out1 = self.fc1(out2)        }
+fc_out1 = self.relu(fc_out1)     } fc layer 1
+fc_out2 = self.fc2(fc_out1)     }
+fc_out2 = self.relu(fc_out2)     } fc layer 2
+output = self.fc3(fc_out2)
+return output

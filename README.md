@@ -91,6 +91,7 @@ Over the next 200 days, I aim to:
 | 061 | Dataset, DataLoader & FeedForward NeuralNetwork | ✅ |
 | 062 | Testing and Experimenting with FNNs | ✅ |
 | 063 | Multi Class NeuralNetwork with MNIST Dataset | ✅ |
+| 064 | Introduction to Convolutional Neural Networks | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -161,6 +162,7 @@ AI-Engineer-Journey/
 ├── Day-061/
 ├── Day-062/
 ├── Day-063/
+├── Day-064/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -204,8 +206,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **63 / 200**
-- 🟩 GitHub Streak: **63 Days**
+- 📅 Day: **64 / 200**
+- 🟩 GitHub Streak: **64 Days**
 - 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas
