@@ -92,7 +92,8 @@ Over the next 200 days, I aim to:
 | 062 | Testing and Experimenting with FNNs | ✅ |
 | 063 | Multi Class NeuralNetwork with MNIST Dataset | ✅ |
 | 064 | Introduction to Convolutional Neural Networks | ✅ |
-| 064 | CIFAR10 Dataset with CNNs | ✅ |
+| 065 | CIFAR10 Dataset with CNNs | ✅ |
+| 066 | Building My First Real CNN Archetecture | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -165,6 +166,7 @@ AI-Engineer-Journey/
 ├── Day-063/
 ├── Day-064/
 ├── Day-065/
+├── Day-066/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -208,8 +210,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **65 / 200**
-- 🟩 GitHub Streak: **65 Days**
+- 📅 Day: **66 / 200**
+- 🟩 GitHub Streak: **66 Days**
 - 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas
