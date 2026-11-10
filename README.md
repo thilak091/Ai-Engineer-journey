@@ -94,6 +94,8 @@ Over the next 200 days, I aim to:
 | 064 | Introduction to Convolutional Neural Networks | ✅ |
 | 065 | CIFAR10 Dataset with CNNs | ✅ |
 | 066 | Building My First Real CNN Archetecture | ✅ |
+| 066 | Practicing CNNs day 1 | ✅ |
+| 066 | Practicing CNNs day 2 | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -167,6 +169,8 @@ AI-Engineer-Journey/
 ├── Day-064/
 ├── Day-065/
 ├── Day-066/
+├── Day-067/
+├── Day-068/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -210,8 +214,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **66 / 200**
-- 🟩 GitHub Streak: **66 Days**
+- 📅 Day: **68 / 200**
+- 🟩 GitHub Streak: **68 Days**
 - 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas
