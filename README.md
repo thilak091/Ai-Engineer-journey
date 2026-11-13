@@ -98,6 +98,7 @@ Over the next 200 days, I aim to:
 | 068 | Practicing CNNs day 2 | ✅ |
 | 069 | Practicing CNNs day 3 | ✅ |
 | 070 | Max Pooling and Fully Connected Layers | ✅ |
+| 071 | Day 70 Project day 1 | ✅ |
 ---
 
 # 📂 Repository Structure
@@ -175,6 +176,7 @@ AI-Engineer-Journey/
 ├── Day-068/
 ├── Day-069/
 ├── Day-070/
+├── Day-071/
 ├── Projects/
 ├── Notes/
 └── README.md
@@ -218,8 +220,8 @@ AI-Engineer-Journey/
 
 # 📈 Current Stats
 
-- 📅 Day: **70 / 200**
-- 🟩 GitHub Streak: **70 Days**
+- 📅 Day: **71 / 200**
+- 🟩 GitHub Streak: **71 Days**
 - 💻 Projects Built: **5**
 - 📚 Major Topics Covered:
   - Pandas
